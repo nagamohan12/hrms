@@ -12699,3 +12699,1431 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/sessions/new.html.erb within layouts/devise (4.9ms)
   Rendered layouts/_head.html.erb (99.8ms)
 Completed 200 OK in 110ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-17 23:14:25 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (35.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nagamohan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagamohan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagamohan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (55.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateDepartments (20150617144252)
+  [1m[35m (198.1ms)[0m  CREATE TABLE `departments` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617144252')
+  [1m[36m (52.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDesignations (20150617144427)
+  [1m[35m (98.1ms)[0m  CREATE TABLE `designations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617144427')
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateHolidays (20150617144915)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateHolidays (20150617144915)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateHolidays (20150617144915)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateHolidays (20150617144915)
+  [1m[35m (135.0ms)[0m  CREATE TABLE `holidays` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617144915')
+  [1m[36m (51.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBloodGroups (20150617144955)
+  [1m[35m (99.1ms)[0m  CREATE TABLE `blood_groups` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617144955')
+  [1m[36m (43.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLanguages (20150617145143)
+  [1m[35m (132.6ms)[0m  CREATE TABLE `languages` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617145143')
+  [1m[36m (41.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReligions (20150617145201)
+  [1m[35m (99.3ms)[0m  CREATE TABLE `religions` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617145201')
+  [1m[36m (42.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserTypes (20150617145214)
+  [1m[35m (101.2ms)[0m  CREATE TABLE `user_types` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617145214')
+  [1m[36m (52.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateGrades (20150617145304)
+  [1m[35m (95.7ms)[0m  CREATE TABLE `grades` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617145304')
+  [1m[36m (41.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLocations (20150617145406)
+  [1m[35m (108.6ms)[0m  CREATE TABLE `locations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617145406')
+  [1m[36m (51.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'blood_groups'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `blood_groups`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'departments'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `departments`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'designations'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `designations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'grades'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `grades`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'holidays'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `holidays`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'languages'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `languages`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'locations'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `locations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'religions'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `religions`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'roles'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `roles`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'user_types'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `user_types`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'users_roles'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `users_roles`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'blood_groups'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `blood_groups`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'departments'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `departments`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'designations'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `designations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'grades'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `grades`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'holidays'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `holidays`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'languages'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `languages`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'locations'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `locations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'religions'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `religions`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'roles'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `roles`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'user_types'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `user_types`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'users_roles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users_roles`
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-17 23:18:29 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (133.1ms)
+  Rendered layouts/_head.html.erb (2416.5ms)
+Completed 200 OK in 2622ms (Views: 2569.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/scaffolds.self-91fda96bd6055fd2f514368f1bbacf5726feac3515c0ce2ddcfab2267c63018e.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/application.self-2ba2d6f0b66f92ab19cf5920c2694f846dffb14be0538d130ae348940956617c.css?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-06-17 23:18:32 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-06-17 23:18:40 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise (14.7ms)
+  Rendered layouts/_head.html.erb (136.5ms)
+Completed 200 OK in 167ms (Views: 166.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-17 23:18:56 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fQMgoDzhHDNKAXwV1KLxCuXZBuip9UPewBAwlYfq5qfGlimi/OWStL1XDpK+4X7jpbsbkTPH2h1GjA0agyl0fA==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (38.7ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'test@test.com' LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('test@test.com', '$2a$10$ZPArbLo/6sIXrY1z86rFwu0sTsyPGO77Whlwi0/iDKPsCOIaC5JgO', '2015-06-17 17:48:56', '2015-06-17 17:48:56')
+  [1m[36m (56.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (18.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-06-17 17:48:56', `current_sign_in_at` = '2015-06-17 17:48:56', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2015-06-17 17:48:56' WHERE `users`.`id` = 1[0m
+  [1m[35m (47.2ms)[0m  COMMIT
+Completed 500 Internal Server Error in 433ms (ActiveRecord: 162.4ms)
+
+NameError (undefined local variable or method `applications_path' for #<Devise::RegistrationsController:0x007f2ac6b6f5d8>):
+  app/controllers/application_controller.rb:15:in `after_sign_in_path_for'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fQMgoDzhHDNKAXwV1KLxCuXZBuip9UPewBAwlYfq5qfGlimi/OWStL1XDpK+4X7jpbsbkTPH2h1GjA0agyl0fA==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'test@test.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise (6.5ms)
+  Rendered layouts/_head.html.erb (156.0ms)
+Completed 200 OK in 300ms (Views: 166.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/scaffolds.self-91fda96bd6055fd2f514368f1bbacf5726feac3515c0ce2ddcfab2267c63018e.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/application.self-2ba2d6f0b66f92ab19cf5920c2694f846dffb14be0538d130ae348940956617c.css?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-06-17 23:19:54 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-06-17 23:19:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (5.2ms)
+  Rendered layouts/_head.html.erb (139.7ms)
+Completed 200 OK in 150ms (Views: 147.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-06-17 23:20:04 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7P0//yUo5jUJM1Ab1DgJuErOs0n9/oS2KlZHc6H42yNXaDb95Sxosv5lIpy+e4ZRCqyuMGfMHXWsynr8pTtJ+A==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'test@test.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2015-06-17 17:50:04', `sign_in_count` = 2, `updated_at` = '2015-06-17 17:50:04' WHERE `users`.`id` = 1
+  [1m[36m (81.0ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 81.7ms)
+
+NameError (undefined local variable or method `dpartment_path' for #<Devise::SessionsController:0x007f2ab40282b8>):
+  app/controllers/application_controller.rb:15:in `after_sign_in_path_for'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.0ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-06-17 23:20:20 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7P0//yUo5jUJM1Ab1DgJuErOs0n9/oS2KlZHc6H42yNXaDb95Sxosv5lIpy+e4ZRCqyuMGfMHXWsynr8pTtJ+A==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'test@test.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2015-06-17 17:50:04', `current_sign_in_at` = '2015-06-17 17:50:20', `sign_in_count` = 3, `updated_at` = '2015-06-17 17:50:20' WHERE `users`.`id` = 1
+  [1m[36m (50.1ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 54.2ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"departments"} missing required keys: [:id]):
+  app/controllers/application_controller.rb:15:in `after_sign_in_path_for'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.2ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (29.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-06-17 23:20:59 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7P0//yUo5jUJM1Ab1DgJuErOs0n9/oS2KlZHc6H42yNXaDb95Sxosv5lIpy+e4ZRCqyuMGfMHXWsynr8pTtJ+A==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'test@test.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2015-06-17 17:50:20', `current_sign_in_at` = '2015-06-17 17:51:00', `sign_in_count` = 4, `updated_at` = '2015-06-17 17:51:00' WHERE `users`.`id` = 1
+  [1m[36m (77.3ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 81.4ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"designations"} missing required keys: [:id]):
+  app/controllers/application_controller.rb:15:in `after_sign_in_path_for'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.0ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (27.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-06-17 23:21:48 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7P0//yUo5jUJM1Ab1DgJuErOs0n9/oS2KlZHc6H42yNXaDb95Sxosv5lIpy+e4ZRCqyuMGfMHXWsynr8pTtJ+A==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'test@test.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2015-06-17 17:51:00', `current_sign_in_at` = '2015-06-17 17:51:48', `sign_in_count` = 5, `updated_at` = '2015-06-17 17:51:48' WHERE `users`.`id` = 1
+  [1m[36m (100.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/designations
+Completed 302 Found in 214ms (ActiveRecord: 104.5ms)
+
+
+Started GET "/designations" for 127.0.0.1 at 2015-06-17 23:21:48 +0530
+Processing by DesignationsController#index as HTML
+  [1m[35mDesignation Load (0.6ms)[0m  SELECT `designations`.* FROM `designations`
+  Rendered designations/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_head.html.erb (151.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 166ms (Views: 159.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:48 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:48 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:48 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:48 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:48 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/scaffolds.self-91fda96bd6055fd2f514368f1bbacf5726feac3515c0ce2ddcfab2267c63018e.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/application.self-2ba2d6f0b66f92ab19cf5920c2694f846dffb14be0538d130ae348940956617c.css?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-06-17 23:21:49 +0530
+
+
+Started GET "/designations" for 127.0.0.1 at 2015-06-17 23:23:36 +0530
+Processing by DesignationsController#index as HTML
+  [1m[35mDesignation Load (0.3ms)[0m  SELECT `designations`.* FROM `designations`
+  Rendered designations/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_head.html.erb (146.8ms)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"departments"} missing required keys: [:id]):
+    17:         <li class="dropdown">
+    18:           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+    19:           <ul class="dropdown-menu" role="menu">
+    20:             <li><%= link_to 'Department' ,department_path%></li>
+    21:             <li><a href="#">Another action</a></li>
+    22:             <li><a href="#">Something else here</a></li>
+    23:             <li class="divider"></li>
+  app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb___226296810027151153_69910830149280'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.2ms)
+
+
+Started GET "/designations" for 127.0.0.1 at 2015-06-17 23:23:47 +0530
+Processing by DesignationsController#index as HTML
+  [1m[36mDesignation Load (0.2ms)[0m  [1mSELECT `designations`.* FROM `designations`[0m
+  Rendered designations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_head.html.erb (146.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 154ms (Views: 152.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/scaffolds.self-91fda96bd6055fd2f514368f1bbacf5726feac3515c0ce2ddcfab2267c63018e.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/application.self-2ba2d6f0b66f92ab19cf5920c2694f846dffb14be0538d130ae348940956617c.css?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-06-17 23:23:48 +0530
+
+
+Started GET "/departments" for 127.0.0.1 at 2015-06-17 23:23:52 +0530
+Processing by DepartmentsController#index as HTML
+  [1m[36mDepartment Load (0.6ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  Rendered departments/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_head.html.erb (169.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 190ms (Views: 181.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2015-06-17 23:23:55 +0530
+Processing by DepartmentsController#index as HTML
+  [1m[36mDepartment Load (0.6ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  Rendered departments/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_head.html.erb (148.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 158ms (Views: 156.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+Processing by DepartmentsController#index as HTML
+  [1m[36mDepartment Load (0.3ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  Rendered departments/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_head.html.erb (166.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 179ms (Views: 177.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/scaffolds.self-91fda96bd6055fd2f514368f1bbacf5726feac3515c0ce2ddcfab2267c63018e.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/application.self-2ba2d6f0b66f92ab19cf5920c2694f846dffb14be0538d130ae348940956617c.css?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:53 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:54 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:54 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:54 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:54 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:54 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-06-17 23:34:54 +0530
+
+
+Started GET "/grades" for 127.0.0.1 at 2015-06-17 23:35:00 +0530
+Processing by GradesController#index as HTML
+  [1m[36mGrade Load (0.6ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  Rendered grades/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_head.html.erb (156.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 170ms (Views: 162.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/user_types" for 127.0.0.1 at 2015-06-17 23:35:02 +0530
+Processing by UserTypesController#index as HTML
+  [1m[36mUserType Load (0.5ms)[0m  [1mSELECT `user_types`.* FROM `user_types`[0m
+  Rendered user_types/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_head.html.erb (146.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 157ms (Views: 152.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/blood_groups" for 127.0.0.1 at 2015-06-17 23:35:05 +0530
+Processing by BloodGroupsController#index as HTML
+  [1m[36mBloodGroup Load (0.6ms)[0m  [1mSELECT `blood_groups`.* FROM `blood_groups`[0m
+  Rendered blood_groups/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_head.html.erb (157.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 172ms (Views: 166.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/blood_groups" for 127.0.0.1 at 2015-06-17 23:40:54 +0530
+Processing by BloodGroupsController#index as HTML
+  [1m[36mBloodGroup Load (0.3ms)[0m  [1mSELECT `blood_groups`.* FROM `blood_groups`[0m
+  Rendered blood_groups/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_head.html.erb (163.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 174ms (Views: 171.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blood_groups" for 127.0.0.1 at 2015-06-17 23:42:49 +0530
+Processing by BloodGroupsController#index as HTML
+  [1m[36mBloodGroup Load (0.2ms)[0m  [1mSELECT `blood_groups`.* FROM `blood_groups`[0m
+  Rendered blood_groups/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_head.html.erb (140.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 147ms (Views: 145.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/scaffolds.self-91fda96bd6055fd2f514368f1bbacf5726feac3515c0ce2ddcfab2267c63018e.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/application.self-2ba2d6f0b66f92ab19cf5920c2694f846dffb14be0538d130ae348940956617c.css?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-06-17 23:42:50 +0530
+
+
+Started GET "/departments" for 127.0.0.1 at 2015-06-17 23:42:56 +0530
+Processing by DepartmentsController#index as HTML
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  Rendered departments/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_head.html.erb (141.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 152ms (Views: 150.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/designations" for 127.0.0.1 at 2015-06-17 23:42:58 +0530
+Processing by DesignationsController#index as HTML
+  [1m[36mDesignation Load (0.3ms)[0m  [1mSELECT `designations`.* FROM `designations`[0m
+  Rendered designations/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_head.html.erb (168.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 180ms (Views: 178.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/grades" for 127.0.0.1 at 2015-06-17 23:43:00 +0530
+Processing by GradesController#index as HTML
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  Rendered grades/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_head.html.erb (159.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 167ms (Views: 165.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user_types" for 127.0.0.1 at 2015-06-17 23:43:02 +0530
+Processing by UserTypesController#index as HTML
+  [1m[36mUserType Load (0.3ms)[0m  [1mSELECT `user_types`.* FROM `user_types`[0m
+  Rendered user_types/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_head.html.erb (157.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 163ms (Views: 162.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blood_groups" for 127.0.0.1 at 2015-06-17 23:43:05 +0530
+Processing by BloodGroupsController#index as HTML
+  [1m[36mBloodGroup Load (0.3ms)[0m  [1mSELECT `blood_groups`.* FROM `blood_groups`[0m
+  Rendered blood_groups/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_head.html.erb (151.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 162ms (Views: 159.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/holidays" for 127.0.0.1 at 2015-06-17 23:43:08 +0530
+Processing by HolidaysController#index as HTML
+  [1m[36mHoliday Load (0.5ms)[0m  [1mSELECT `holidays`.* FROM `holidays`[0m
+  Rendered holidays/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_head.html.erb (143.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 158ms (Views: 151.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/holidays" for 127.0.0.1 at 2015-06-17 23:43:12 +0530
+Processing by HolidaysController#index as HTML
+  [1m[36mHoliday Load (0.4ms)[0m  [1mSELECT `holidays`.* FROM `holidays`[0m
+  Rendered holidays/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_head.html.erb (137.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 147ms (Views: 145.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/languages" for 127.0.0.1 at 2015-06-17 23:43:15 +0530
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (0.5ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered languages/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_head.html.erb (146.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 161ms (Views: 155.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/languages/new" for 127.0.0.1 at 2015-06-17 23:43:17 +0530
+Processing by LanguagesController#new as HTML
+  Rendered languages/_form.html.erb (167.6ms)
+  Rendered languages/new.html.erb within layouts/application (168.9ms)
+  Rendered layouts/_head.html.erb (136.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 318ms (Views: 309.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/languages" for 127.0.0.1 at 2015-06-17 23:43:22 +0530
+Processing by LanguagesController#index as HTML
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT `languages`.* FROM `languages`
+  Rendered languages/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_head.html.erb (139.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 146ms (Views: 144.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-06-17 23:43:25 +0530
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.5ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered locations/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_head.html.erb (143.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 153ms (Views: 148.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/religions" for 127.0.0.1 at 2015-06-17 23:43:28 +0530
+Processing by ReligionsController#index as HTML
+  [1m[35mReligion Load (0.5ms)[0m  SELECT `religions`.* FROM `religions`
+  Rendered religions/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_head.html.erb (140.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 153ms (Views: 146.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/religions/new" for 127.0.0.1 at 2015-06-17 23:43:30 +0530
+Processing by ReligionsController#new as HTML
+  Rendered religions/_form.html.erb (27.2ms)
+  Rendered religions/new.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_head.html.erb (149.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 186ms (Views: 181.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/religions" for 127.0.0.1 at 2015-06-17 23:43:33 +0530
+Processing by ReligionsController#index as HTML
+  [1m[36mReligion Load (0.3ms)[0m  [1mSELECT `religions`.* FROM `religions`[0m
+  Rendered religions/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_head.html.erb (136.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 141ms (Views: 140.0ms | ActiveRecord: 0.6ms)
