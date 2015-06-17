@@ -12658,3 +12658,44 @@ Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323
 
 
 Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-16 15:48:17 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-16 20:20:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (144.7ms)
+  Rendered layouts/_head.html.erb (203.0ms)
+Completed 200 OK in 386ms (Views: 354.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-06-16 20:58:11 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise (3.5ms)
+  Rendered layouts/_head.html.erb (131.5ms)
+Completed 200 OK in 138ms (Views: 136.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-06-16 20:58:17 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (2.9ms)
+  Rendered layouts/_head.html.erb (75.4ms)
+Completed 200 OK in 84ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2015-06-16 20:58:21 +0530
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/passwords/new.html.erb within layouts/devise (5.7ms)
+  Rendered layouts/_head.html.erb (80.2ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-06-16 20:58:24 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (4.9ms)
+  Rendered layouts/_head.html.erb (99.8ms)
+Completed 200 OK in 110ms (Views: 107.8ms | ActiveRecord: 0.0ms)
