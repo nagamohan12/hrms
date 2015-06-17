@@ -1,0 +1,95 @@
+User
+
+username
+email
+encrypt password
+
+user_details
+first_name
+last_name
+age
+gender
+DOB
+blood_group
+official_tele_num
+official_mobile
+personnel_mobile
+fax
+official_email
+personnel_email
+personnel_email1
+personnel_email2
+
+personnel_details
+birth place
+religion
+caste
+nationality
+voter_id
+pan_no
+aadhar_no
+marital status
+Anniversary date
+no of children
+spouse name
+
+
+Department
+Designation
+
+Address
+permanent address
+present address
+emergency contact address
+personnel email id
+contact number
+
+Family
+name
+DOB
+age
+nationality
+gender
+Blood group
+profession
+relationship
+is_dependent
+
+
+Languages
+
+name
+read
+write
+speak
+mother tongue
+
+
+User_profession_detail
+uid
+DOJ
+RM
+status
+
+leaves
+Privilege 
+lop
+sick
+
+holidays
+
+user_working_details
+sign_in
+sign_out
+total_login
+
+
+Departments
+Designation
+Holidays
+Blood Groups
+Languages
+Locations
+Religion
+UserType
+Grade
