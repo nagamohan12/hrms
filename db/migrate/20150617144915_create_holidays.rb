@@ -3,7 +3,7 @@ class CreateHolidays < ActiveRecord::Migration
     create_table :holidays do |t|
       t.string :name
       t.date :date
-      t.year :date
+      t.year :string
 
       t.timestamps null: false
     end

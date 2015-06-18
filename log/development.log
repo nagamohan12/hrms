@@ -14127,3 +14127,547 @@ Processing by ReligionsController#index as HTML
   Rendered layouts/_head.html.erb (136.2ms)
   [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
 Completed 200 OK in 141ms (Views: 140.0ms | ActiveRecord: 0.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateDepartments (20150617144252)
+  [1m[35m (45.8ms)[0m  CREATE TABLE `departments` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617144252')
+  [1m[36m (51.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDesignations (20150617144427)
+  [1m[35m (88.8ms)[0m  CREATE TABLE `designations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150617144427')
+  [1m[36m (32.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateHolidays (20150617144915)
+  [1m[36mActiveRecord::SchemaMigration Load (84.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateHolidays (20150617144915)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateHolidays (20150617144915)
+  [1m[36m (603.9ms)[0m  [1mDROP DATABASE IF EXISTS `hrms_development`[0m
+  [1m[35m (0.4ms)[0m  DROP DATABASE IF EXISTS `db/test.sqlite3`
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE `hrms_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (0.1ms)[0m  CREATE DATABASE `db/test.sqlite3` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (122.2ms)[0m  [1mCREATE TABLE `blood_groups` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (83.0ms)[0m  CREATE TABLE `departments` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (115.9ms)[0m  [1mCREATE TABLE `designations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (127.1ms)[0m  CREATE TABLE `grades` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (50.2ms)[0m  [1mCREATE TABLE `holidays` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (66.4ms)[0m  CREATE TABLE `languages` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (162.5ms)[0m  [1mCREATE TABLE `locations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (32.9ms)[0m  CREATE TABLE `religions` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (49.9ms)[0m  [1mCREATE TABLE `roles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `resource_id` int(11), `resource_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (240.9ms)[0m  CREATE  INDEX `index_roles_on_name_and_resource_type_and_resource_id` USING btree ON `roles` (`name`, `resource_type`, `resource_id`) 
+  [1m[36m (166.8ms)[0m  [1mCREATE  INDEX `index_roles_on_name` USING btree ON `roles` (`name`) [0m
+  [1m[35m (76.1ms)[0m  CREATE TABLE `user_types` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (146.9ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (205.2ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` USING btree ON `users` (`email`) 
+  [1m[36m (200.5ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token` USING btree ON `users` (`reset_password_token`) [0m
+  [1m[35m (120.1ms)[0m  CREATE TABLE `users_roles` (`user_id` int(11), `role_id` int(11)) ENGINE=InnoDB
+  [1m[36m (142.6ms)[0m  [1mCREATE  INDEX `index_users_roles_on_user_id_and_role_id` USING btree ON `users_roles` (`user_id`, `role_id`) [0m
+  [1m[35m (96.8ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (320.1ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (33.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145406')[0m
+  [1m[35m (24.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150604073111')
+  [1m[36m (16.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145304')[0m
+  [1m[35m (25.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145201')
+  [1m[36m (16.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617144955')[0m
+  [1m[35m (50.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617144252')
+  [1m[36m (50.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145143')[0m
+  [1m[35m (55.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150604072948')
+  [1m[36m (25.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145214')[0m
+  [1m[35m (25.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617144427')
+  [1m[36m (16.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617144915')[0m
+  [1m[35m (64.8ms)[0m  CREATE TABLE `blood_groups` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (116.0ms)[0m  [1mCREATE TABLE `departments` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (71.5ms)[0m  CREATE TABLE `designations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (58.4ms)[0m  [1mCREATE TABLE `grades` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (116.1ms)[0m  CREATE TABLE `holidays` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (96.5ms)[0m  [1mCREATE TABLE `languages` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (33.3ms)[0m  CREATE TABLE `locations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (91.2ms)[0m  [1mCREATE TABLE `religions` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (104.8ms)[0m  CREATE TABLE `roles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `resource_id` int(11), `resource_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (180.8ms)[0m  [1mCREATE  INDEX `index_roles_on_name_and_resource_type_and_resource_id` USING btree ON `roles` (`name`, `resource_type`, `resource_id`) [0m
+  [1m[35m (117.6ms)[0m  CREATE  INDEX `index_roles_on_name` USING btree ON `roles` (`name`) 
+  [1m[36m (108.3ms)[0m  [1mCREATE TABLE `user_types` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (111.1ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (117.8ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` USING btree ON `users` (`email`) [0m
+  [1m[35m (221.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` USING btree ON `users` (`reset_password_token`) 
+  [1m[36m (58.6ms)[0m  [1mCREATE TABLE `users_roles` (`user_id` int(11), `role_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (180.5ms)[0m  CREATE  INDEX `index_users_roles_on_user_id_and_role_id` USING btree ON `users_roles` (`user_id`, `role_id`) 
+  [1m[36m (49.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (200.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (33.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145406')
+  [1m[36m (24.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150604073111')[0m
+  [1m[35m (16.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145304')
+  [1m[36m (25.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145201')[0m
+  [1m[35m (41.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617144955')
+  [1m[36m (50.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617144252')[0m
+  [1m[35m (80.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145143')
+  [1m[36m (24.9ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150604072948')[0m
+  [1m[35m (16.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145214')
+  [1m[36m (25.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617144427')[0m
+  [1m[35m (16.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617144915')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (21.8ms)[0m  [1mINSERT INTO `departments` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Testing', 1, '2015-06-18 08:45:40', '2015-06-18 08:45:40')[0m
+  [1m[35m (20.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `departments` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Developing', 1, '2015-06-18 08:45:40', '2015-06-18 08:45:40')
+  [1m[36m (15.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (9.3ms)[0m  [1mINSERT INTO `designations` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Software Engineer Trainee', 1, '2015-06-18 08:45:40', '2015-06-18 08:45:40')[0m
+  [1m[35m (20.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.8ms)[0m  INSERT INTO `designations` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Software Engineer', 1, '2015-06-18 08:45:40', '2015-06-18 08:45:40')
+  [1m[36m (18.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `designations` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Senior Software Engineer', 1, '2015-06-18 08:45:40', '2015-06-18 08:45:40')[0m
+  [1m[35m (40.1ms)[0m  COMMIT
+  [1m[36m (399.7ms)[0m  [1mDROP DATABASE IF EXISTS `hrms_development`[0m
+  [1m[35m (429.3ms)[0m  DROP DATABASE IF EXISTS `db/test.sqlite3`
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE `hrms_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (0.2ms)[0m  CREATE DATABASE `db/test.sqlite3` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (109.0ms)[0m  [1mCREATE TABLE `blood_groups` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (69.1ms)[0m  CREATE TABLE `departments` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (33.6ms)[0m  [1mCREATE TABLE `designations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (115.6ms)[0m  CREATE TABLE `grades` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (129.3ms)[0m  [1mCREATE TABLE `holidays` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (41.1ms)[0m  CREATE TABLE `languages` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (33.4ms)[0m  [1mCREATE TABLE `locations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (107.8ms)[0m  CREATE TABLE `religions` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (99.2ms)[0m  [1mCREATE TABLE `roles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `resource_id` int(11), `resource_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (212.1ms)[0m  CREATE  INDEX `index_roles_on_name_and_resource_type_and_resource_id` USING btree ON `roles` (`name`, `resource_type`, `resource_id`) 
+  [1m[36m (133.5ms)[0m  [1mCREATE  INDEX `index_roles_on_name` USING btree ON `roles` (`name`) [0m
+  [1m[35m (157.5ms)[0m  CREATE TABLE `user_types` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (77.7ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (181.3ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` USING btree ON `users` (`email`) 
+  [1m[36m (125.7ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token` USING btree ON `users` (`reset_password_token`) [0m
+  [1m[35m (66.7ms)[0m  CREATE TABLE `users_roles` (`user_id` int(11), `role_id` int(11)) ENGINE=InnoDB
+  [1m[36m (216.3ms)[0m  [1mCREATE  INDEX `index_users_roles_on_user_id_and_role_id` USING btree ON `users_roles` (`user_id`, `role_id`) [0m
+  [1m[35m (74.8ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (142.8ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (49.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145406')[0m
+  [1m[35m (91.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150604073111')
+  [1m[36m (79.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145304')[0m
+  [1m[35m (25.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145201')
+  [1m[36m (24.9ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617144955')[0m
+  [1m[35m (16.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617144252')
+  [1m[36m (25.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145143')[0m
+  [1m[35m (16.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150604072948')
+  [1m[36m (25.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145214')[0m
+  [1m[35m (16.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617144427')
+  [1m[36m (16.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617144915')[0m
+  [1m[35m (114.6ms)[0m  CREATE TABLE `blood_groups` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (95.6ms)[0m  [1mCREATE TABLE `departments` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (33.5ms)[0m  CREATE TABLE `designations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (58.1ms)[0m  [1mCREATE TABLE `grades` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (124.4ms)[0m  CREATE TABLE `holidays` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (153.0ms)[0m  [1mCREATE TABLE `languages` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (33.5ms)[0m  CREATE TABLE `locations` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `is_active` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (50.2ms)[0m  [1mCREATE TABLE `religions` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (140.8ms)[0m  CREATE TABLE `roles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `resource_id` int(11), `resource_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (225.7ms)[0m  [1mCREATE  INDEX `index_roles_on_name_and_resource_type_and_resource_id` USING btree ON `roles` (`name`, `resource_type`, `resource_id`) [0m
+  [1m[35m (259.2ms)[0m  CREATE  INDEX `index_roles_on_name` USING btree ON `roles` (`name`) 
+  [1m[36m (66.8ms)[0m  [1mCREATE TABLE `user_types` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (58.0ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (266.4ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` USING btree ON `users` (`email`) [0m
+  [1m[35m (202.1ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` USING btree ON `users` (`reset_password_token`) 
+  [1m[36m (50.4ms)[0m  [1mCREATE TABLE `users_roles` (`user_id` int(11), `role_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (188.7ms)[0m  CREATE  INDEX `index_users_roles_on_user_id_and_role_id` USING btree ON `users_roles` (`user_id`, `role_id`) 
+  [1m[36m (58.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (250.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (78.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145406')
+  [1m[36m (16.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150604073111')[0m
+  [1m[35m (25.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145304')
+  [1m[36m (16.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617145201')[0m
+  [1m[35m (25.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617144955')
+  [1m[36m (16.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617144252')[0m
+  [1m[35m (16.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145143')
+  [1m[36m (16.9ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150604072948')[0m
+  [1m[35m (16.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617145214')
+  [1m[36m (41.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150617144427')[0m
+  [1m[35m (41.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150617144915')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `departments` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Testing', 1, '2015-06-18 08:46:53', '2015-06-18 08:46:53')[0m
+  [1m[35m (68.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `departments` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Developing', 1, '2015-06-18 08:46:53', '2015-06-18 08:46:53')
+  [1m[36m (15.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO `designations` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Software Engineer Trainee', 1, '2015-06-18 08:46:53', '2015-06-18 08:46:53')[0m
+  [1m[35m (21.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `designations` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Software Engineer', 1, '2015-06-18 08:46:53', '2015-06-18 08:46:53')
+  [1m[36m (15.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO `designations` (`name`, `is_active`, `created_at`, `updated_at`) VALUES ('Senior Software Engineer', 1, '2015-06-18 08:46:53', '2015-06-18 08:46:53')[0m
+  [1m[35m (18.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `grades` (`name`, `created_at`, `updated_at`) VALUES ('A', '2015-06-18 08:46:53', '2015-06-18 08:46:53')
+  [1m[36m (33.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO `grades` (`name`, `created_at`, `updated_at`) VALUES ('B', '2015-06-18 08:46:54', '2015-06-18 08:46:54')[0m
+  [1m[35m (17.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `grades` (`name`, `created_at`, `updated_at`) VALUES ('C', '2015-06-18 08:46:54', '2015-06-18 08:46:54')
+  [1m[36m (15.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES ('English', '2015-06-18 08:46:54', '2015-06-18 08:46:54')[0m
+  [1m[35m (43.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES ('Hindi', '2015-06-18 08:46:54', '2015-06-18 08:46:54')
+  [1m[36m (42.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES ('Telugu', '2015-06-18 08:46:54', '2015-06-18 08:46:54')[0m
+  [1m[35m (52.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.0ms)[0m  INSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES ('Kannada', '2015-06-18 08:46:54', '2015-06-18 08:46:54')
+  [1m[36m (20.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES ('Tamil', '2015-06-18 08:46:54', '2015-06-18 08:46:54')[0m
+  [1m[35m (15.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (52.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'blood_groups'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `blood_groups`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'departments'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `departments`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'designations'
+[0m
+  [1m[35m (0.8ms)[0m  SHOW CREATE TABLE `designations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'grades'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `grades`
+  [1m[36m (1.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'holidays'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `holidays`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'languages'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `languages`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'locations'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `locations`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'religions'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `religions`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'roles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `roles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'user_types'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `user_types`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hrms_development'
+  AND fk.table_name = 'users_roles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users_roles`
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-18 14:41:39 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (162.3ms)
+  Rendered layouts/_head.html.erb (3556.9ms)
+Completed 200 OK in 3868ms (Views: 3803.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/scaffolds.self-ef538fe0d0a44eac9c8b097174490205aa580dbba7f13ce886c44715401e6d28.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-18 14:41:43 +0530
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-06-18 14:41:49 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7RQwYDCabpMY4yHeNuWgnkFGpcMxvPXv3X+cjaGrOIin53xVbG5ucnPChhs54WuMluBY1B9q0HB8lgHjh4aqMg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'test@test.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 92ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7RQwYDCabpMY4yHeNuWgnkFGpcMxvPXv3X+cjaGrOIin53xVbG5ucnPChhs54WuMluBY1B9q0HB8lgHjh4aqMg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (3.5ms)
+  Rendered layouts/_head.html.erb (157.3ms)
+Completed 200 OK in 244ms (Views: 162.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-06-18 14:41:55 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise (5.1ms)
+  Rendered layouts/_head.html.erb (159.2ms)
+Completed 200 OK in 191ms (Views: 176.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-18 14:42:07 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U7qmQ2wV2SeyaV8WWH7xYXIoolNgebe47Qkiaa2w/FkZSep2MOHZxtlI+NNXejpzpY5fRE6vkidM4L8Hi51u4w==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (52.7ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'test@test.com' LIMIT 1
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('test@test.com', '$2a$10$MCUgnM7ZDZRjkicQfTk9D.tXccliMY/eLRh5g/kynRvWRa3Crumra', '2015-06-18 09:12:07', '2015-06-18 09:12:07')[0m
+  [1m[35m (22.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.6ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2015-06-18 09:12:07', `current_sign_in_at` = '2015-06-18 09:12:07', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2015-06-18 09:12:07' WHERE `users`.`id` = 1
+  [1m[36m (26.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:5000/designations
+Completed 302 Found in 370ms (ActiveRecord: 118.8ms)
+
+
+Started GET "/designations" for 127.0.0.1 at 2015-06-18 14:42:07 +0530
+Processing by DesignationsController#index as HTML
+  [1m[35mDesignation Load (0.3ms)[0m  SELECT `designations`.* FROM `designations`
+  Rendered designations/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_head.html.erb (233.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 264ms (Views: 260.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/designations/new" for 127.0.0.1 at 2015-06-18 14:42:22 +0530
+Processing by DesignationsController#new as HTML
+  Rendered designations/_form.html.erb (137.2ms)
+  Rendered designations/new.html.erb within layouts/application (143.4ms)
+  Rendered layouts/_head.html.erb (206.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 382ms (Views: 380.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2015-06-18 14:42:34 +0530
+Processing by DepartmentsController#index as HTML
+  [1m[36mDepartment Load (0.3ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  Rendered departments/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_head.html.erb (253.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 276ms (Views: 271.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/designations" for 127.0.0.1 at 2015-06-18 14:42:36 +0530
+Processing by DesignationsController#index as HTML
+  [1m[36mDesignation Load (0.1ms)[0m  [1mSELECT `designations`.* FROM `designations`[0m
+  Rendered designations/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_head.html.erb (165.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 174ms (Views: 173.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grades" for 127.0.0.1 at 2015-06-18 14:42:38 +0530
+Processing by GradesController#index as HTML
+  [1m[36mGrade Load (0.4ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  Rendered grades/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_head.html.erb (169.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 187ms (Views: 183.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/user_types" for 127.0.0.1 at 2015-06-18 14:42:41 +0530
+Processing by UserTypesController#index as HTML
+  [1m[36mUserType Load (0.3ms)[0m  [1mSELECT `user_types`.* FROM `user_types`[0m
+  Rendered user_types/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_head.html.erb (163.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 187ms (Views: 171.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/grades" for 127.0.0.1 at 2015-06-18 14:42:44 +0530
+Processing by GradesController#index as HTML
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  Rendered grades/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_head.html.erb (161.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 170ms (Views: 168.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blood_groups" for 127.0.0.1 at 2015-06-18 14:42:46 +0530
+Processing by BloodGroupsController#index as HTML
+  [1m[36mBloodGroup Load (0.4ms)[0m  [1mSELECT `blood_groups`.* FROM `blood_groups`[0m
+  Rendered blood_groups/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_head.html.erb (208.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 239ms (Views: 227.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/holidays" for 127.0.0.1 at 2015-06-18 14:42:49 +0530
+Processing by HolidaysController#index as HTML
+  [1m[36mHoliday Load (0.3ms)[0m  [1mSELECT `holidays`.* FROM `holidays`[0m
+  Rendered holidays/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_head.html.erb (181.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 213ms (Views: 199.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/languages" for 127.0.0.1 at 2015-06-18 14:42:51 +0530
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (0.4ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered languages/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_head.html.erb (165.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 183ms (Views: 179.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/languages" for 127.0.0.1 at 2015-06-18 14:42:55 +0530
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered languages/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_head.html.erb (149.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 157ms (Views: 155.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-06-18 14:42:57 +0530
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  Rendered locations/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_head.html.erb (198.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 217ms (Views: 212.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/religions" for 127.0.0.1 at 2015-06-18 14:43:00 +0530
+Processing by ReligionsController#index as HTML
+  [1m[36mReligion Load (0.3ms)[0m  [1mSELECT `religions`.* FROM `religions`[0m
+  Rendered religions/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_head.html.erb (169.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 186ms (Views: 182.6ms | ActiveRecord: 1.0ms)
