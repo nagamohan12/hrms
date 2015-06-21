@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
+<button class='btn btn-primary' id = "new_form">New</button>
+<div id="new_model_form" style="display:none;">
+  <%= render :partial => "new", locals: {location: Location.new}%>
+</div>
 
-<h1>Listing Locations</h1>
+<h1>Locations</h1>
 
 <table class="table table-striped table-hover">
   <thead>
@@ -16,9 +20,8 @@
       <tr>
         <td><%= location.name %></td>
         <td><%= location.is_active %></td>
-        <td><%= link_to 'Show', location %></td>
         <td><%= link_to 'Edit', edit_location_path(location) %></td>
-        <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><% link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

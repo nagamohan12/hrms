@@ -1,11 +1,8 @@
-<%= simple_form_for(@user_type) do |f| %>
+<%= simple_form_for @user_type,  wrapper: :inline_form,
+  html: { class: 'form-inline' } do |f| %>
+
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-  </div>
-
-  <div class="form-actions">
+    <%= f.input :name, placeholder: 'Enter New User type' %>
     <%= f.button :submit %>
-  </div>
 <% end %>

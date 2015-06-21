@@ -28,7 +28,7 @@ class DesignationsController < ApplicationController
 
     respond_to do |format|
       if @designation.save
-        format.html { redirect_to @designation, notice: 'Designation was successfully created.' }
+        format.html { redirect_to designations_path, notice: 'Designation was successfully created.' }
         format.json { render :show, status: :created, location: @designation }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class DesignationsController < ApplicationController
   def update
     respond_to do |format|
       if @designation.update(designation_params)
-        format.html { redirect_to @designation, notice: 'Designation was successfully updated.' }
+        format.html { redirect_to designations_path, notice: 'Designation was successfully updated.' }
         format.json { render :show, status: :ok, location: @designation }
       else
         format.html { render :edit }

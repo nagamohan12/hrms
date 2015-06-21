@@ -1,12 +1,7 @@
-<%= simple_form_for(@location) do |f| %>
+<%= simple_form_for @location,  wrapper: :inline_form,
+  html: { class: 'form-inline' } do |f| %>
   <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :is_active %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+  <%= f.input :name, placeholder: 'Enter new location' %>
+  <%= f.input :is_active %>
+  <%= f.button :submit %>
 <% end %>

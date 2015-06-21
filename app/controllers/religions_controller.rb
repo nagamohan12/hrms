@@ -28,7 +28,7 @@ class ReligionsController < ApplicationController
 
     respond_to do |format|
       if @religion.save
-        format.html { redirect_to @religion, notice: 'Religion was successfully created.' }
+        format.html { redirect_to religions_path, notice: 'Religion was successfully created.' }
         format.json { render :show, status: :created, location: @religion }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ReligionsController < ApplicationController
   def update
     respond_to do |format|
       if @religion.update(religion_params)
-        format.html { redirect_to @religion, notice: 'Religion was successfully updated.' }
+        format.html { redirect_to religions_path, notice: 'Religion was successfully updated.' }
         format.json { render :show, status: :ok, location: @religion }
       else
         format.html { render :edit }

@@ -15,23 +15,23 @@ ActiveRecord::Schema.define(version: 20150617145406) do
 
   create_table "blood_groups", force: :cascade do |t|
     t.string   "name",       limit: 255
-    t.boolean  "is_active",  limit: 1
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.boolean  "is_active",  limit: 1,   default: true
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "departments", force: :cascade do |t|
     t.string   "name",       limit: 255
-    t.boolean  "is_active",  limit: 1
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.boolean  "is_active",  limit: 1,   default: true
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "designations", force: :cascade do |t|
     t.string   "name",       limit: 255
-    t.boolean  "is_active",  limit: 1
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.boolean  "is_active",  limit: 1,   default: true
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "grades", force: :cascade do |t|
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20150617145406) do
   create_table "holidays", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.date     "date"
+    t.string   "year",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
@@ -55,9 +56,9 @@ ActiveRecord::Schema.define(version: 20150617145406) do
 
   create_table "locations", force: :cascade do |t|
     t.string   "name",       limit: 255
-    t.boolean  "is_active",  limit: 1
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.boolean  "is_active",  limit: 1,   default: true
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "religions", force: :cascade do |t|

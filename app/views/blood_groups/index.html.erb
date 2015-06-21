@@ -1,4 +1,8 @@
 <p id="notice"><%= notice %></p>
+<button class='btn btn-primary' id = "new_form">New</button>
+<div id="new_model_form" style="display:none;">
+  <%= render :partial => "new", locals: {blood_group: BloodGroup.new}%>
+</div>
 
 <h1>Listing Blood Groups</h1>
 
@@ -16,14 +20,11 @@
       <tr>
         <td><%= blood_group.name %></td>
         <td><%= blood_group.is_active %></td>
-        <td><%= link_to 'Show', blood_group %></td>
         <td><%= link_to 'Edit', edit_blood_group_path(blood_group) %></td>
-        <td><%= link_to 'Destroy', blood_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><% link_to 'Destroy', blood_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Blood group', new_blood_group_path %>

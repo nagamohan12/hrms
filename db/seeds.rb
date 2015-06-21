@@ -6,37 +6,49 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+#super admin
+user = User.find_by_email('superadmin@test.com')
+User.create!(email: 'superadmin@test.com',password: 'test@123') if user.blank?
+
 # Departments
-departments = %w(Testing Developing)
+departments = %w(Technical QA Functional)
 departments.each do |d|
-  Department.create(name: d, is_active: true)
+  Department.where(name: d, is_active: true).first_or_create
 end
 
 # Designations
 designations = ['Software Engineer Trainee', 'Software Engineer', 'Senior Software Engineer']
 designations.each do |d|
-  Designation.create(name: d, is_active: true)
+  Designation.where(name: d, is_active: true).first_or_create
 end
 
 # Grades
-grades = ['A','B','C']
+grades = %w(A B C)
 grades.each do |g|
-  Grade.create(name: g)
+  Grade.where(name: g).first_or_create
 end
 
 # Holidays
 # language
 languages = %w(English Hindi Telugu Kannada Tamil)
 languages.each do |l|
-  Language.create(name: l)
+  Language.where(name: l).first_or_create
 end
 
 # Locations
+locations = %w(Bengaluru Tumkur)
+locations.each do |l|
+  Location.where(name: l).first_or_create
+end
+
 # Religions
 religions = %w(Hindu Buddhist Christian Muslim Sikh Others)
 religions.each do |r|
-  Religion.create(name: r)
+  Religion.where(name: r).first_or_create
 end
 
 # User Types
-
+user_types = %w(Permanent Contract)
+user_types.each do |ut|
+  UserType.where(name: ut).first_or_create
+end

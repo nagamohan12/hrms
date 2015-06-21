@@ -1,4 +1,8 @@
 <p id="notice"><%= notice %></p>
+<button class='btn btn-primary' id = "new_form">New</button>
+<div id="new_model_form" style="display:none;">
+  <%= render :partial => "new", locals: {holiday: Holiday.new}%>
+</div>
 
 <h1>Listing Holidays</h1>
 
@@ -18,14 +22,11 @@
         <td><%= holiday.name %></td>
         <td><%= holiday.date %></td>
         <td><%= holiday.year %></td>
-        <td><%= link_to 'Show', holiday %></td>
         <td><%= link_to 'Edit', edit_holiday_path(holiday) %></td>
-        <td><%= link_to 'Destroy', holiday, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><% link_to 'Destroy', holiday, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Holiday', new_holiday_path %>

@@ -28,7 +28,7 @@ class BloodGroupsController < ApplicationController
 
     respond_to do |format|
       if @blood_group.save
-        format.html { redirect_to @blood_group, notice: 'Blood group was successfully created.' }
+        format.html { redirect_to blood_groups_path, notice: 'Blood group was successfully created.' }
         format.json { render :show, status: :created, location: @blood_group }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class BloodGroupsController < ApplicationController
   def update
     respond_to do |format|
       if @blood_group.update(blood_group_params)
-        format.html { redirect_to @blood_group, notice: 'Blood group was successfully updated.' }
+        format.html { redirect_to blood_groups_path, notice: 'Blood group was successfully updated.' }
         format.json { render :show, status: :ok, location: @blood_group }
       else
         format.html { render :edit }
