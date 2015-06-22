@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  permanent: MyText
+  present: MyText
+  emergency: MyText
+  user_id: 
+
+two:
+  permanent: MyText
+  present: MyText
+  emergency: MyText
+  user_id: 

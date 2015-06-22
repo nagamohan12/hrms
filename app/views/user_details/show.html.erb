@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user_detail.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user_detail.last_name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @user_detail.gender %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @user_detail.dob %>
+</p>
+
+<p>
+  <strong>Official phone:</strong>
+  <%= @user_detail.official_phone %>
+</p>
+
+<p>
+  <strong>Official mobile:</strong>
+  <%= @user_detail.official_mobile %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @user_detail.fax %>
+</p>
+
+<p>
+  <strong>Official email:</strong>
+  <%= @user_detail.official_email %>
+</p>
+
+<p>
+  <strong>Pan no:</strong>
+  <%= @user_detail.pan_no %>
+</p>
+
+<p>
+  <strong>Blood group:</strong>
+  <%= @user_detail.blood_group %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @user_detail.department %>
+</p>
+
+<p>
+  <strong>Designation:</strong>
+  <%= @user_detail.designation %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @user_detail.grade %>
+</p>
+
+<p>
+  <strong>Religion:</strong>
+  <%= @user_detail.religion %>
+</p>
+
+<p>
+  <strong>User type:</strong>
+  <%= @user_detail.user_type %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_detail.user %>
+</p>
+
+<%= link_to 'Edit', edit_user_detail_path(@user_detail) %> |
+<%= link_to 'Back', user_details_path %>

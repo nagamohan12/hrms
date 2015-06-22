@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Family Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Dob</th>
+      <th>Nationality</th>
+      <th>Gender</th>
+      <th>Blood group</th>
+      <th>Profession</th>
+      <th>Relationship</th>
+      <th>Is dependent</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @family_details.each do |family_detail| %>
+      <tr>
+        <td><%= family_detail.name %></td>
+        <td><%= family_detail.dob %></td>
+        <td><%= family_detail.nationality %></td>
+        <td><%= family_detail.gender %></td>
+        <td><%= family_detail.blood_group %></td>
+        <td><%= family_detail.profession %></td>
+        <td><%= family_detail.relationship %></td>
+        <td><%= family_detail.is_dependent %></td>
+        <td><%= family_detail.user %></td>
+        <td><%= link_to 'Show', family_detail %></td>
+        <td><%= link_to 'Edit', edit_family_detail_path(family_detail) %></td>
+        <td><%= link_to 'Destroy', family_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Family detail', new_family_detail_path %>

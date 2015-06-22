@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @user_work_detail.login %>
+</p>
+
+<p>
+  <strong>Logout:</strong>
+  <%= @user_work_detail.logout %>
+</p>
+
+<p>
+  <strong>Total time:</strong>
+  <%= @user_work_detail.total_time %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_work_detail.user %>
+</p>
+
+<%= link_to 'Edit', edit_user_work_detail_path(@user_work_detail) %> |
+<%= link_to 'Back', user_work_details_path %>

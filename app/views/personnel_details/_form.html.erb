@@ -1,0 +1,25 @@
+<%= simple_form_for(@personnel_detail) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :birth_place %>
+    <%= f.input :caste %>
+    <%= f.input :nationality %>
+    <%= f.input :voter_id %>
+    <%= f.input :aadhar_no %>
+    <%= f.input :marital_status %>
+    <%= f.input :anniversary_date %>
+    <%= f.input :spouse_name %>
+    <%= f.input :no_of_children %>
+    <%= f.input :personnel_email %>
+    <%= f.input :personnel_email1 %>
+    <%= f.input :personnel_mobile %>
+    <%= f.input :personnel_mobile1 %>
+    <%= f.input :emergency_contact_number %>
+    <%= f.association :user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

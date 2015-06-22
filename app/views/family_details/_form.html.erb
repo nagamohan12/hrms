@@ -1,0 +1,19 @@
+<%= simple_form_for(@family_detail) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :dob %>
+    <%= f.input :nationality %>
+    <%= f.input :gender %>
+    <%= f.association :blood_group %>
+    <%= f.input :profession %>
+    <%= f.input :relationship %>
+    <%= f.input :is_dependent %>
+    <%= f.association :user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

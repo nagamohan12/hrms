@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Permanent:</strong>
+  <%= @address.permanent %>
+</p>
+
+<p>
+  <strong>Present:</strong>
+  <%= @address.present %>
+</p>
+
+<p>
+  <strong>Emergency:</strong>
+  <%= @address.emergency %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @address.user %>
+</p>
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>

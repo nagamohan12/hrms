@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  gender: MyString
+  dob: 2015-06-23
+  official_phone: 1
+  official_mobile: 1
+  fax: 1
+  official_email: MyString
+  pan_no: MyString
+  blood_group_id: 
+  department_id: 
+  designation_id: 
+  grade_id: 
+  religion_id: 
+  user_type_id: 
+  user_id: 
+
+two:
+  first_name: MyString
+  last_name: MyString
+  gender: MyString
+  dob: 2015-06-23
+  official_phone: 1
+  official_mobile: 1
+  fax: 1
+  official_email: MyString
+  pan_no: MyString
+  blood_group_id: 
+  department_id: 
+  designation_id: 
+  grade_id: 
+  religion_id: 
+  user_type_id: 
+  user_id: 

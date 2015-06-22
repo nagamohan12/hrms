@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing User Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Gender</th>
+      <th>Dob</th>
+      <th>Official phone</th>
+      <th>Official mobile</th>
+      <th>Fax</th>
+      <th>Official email</th>
+      <th>Pan no</th>
+      <th>Blood group</th>
+      <th>Department</th>
+      <th>Designation</th>
+      <th>Grade</th>
+      <th>Religion</th>
+      <th>User type</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_details.each do |user_detail| %>
+      <tr>
+        <td><%= user_detail.first_name %></td>
+        <td><%= user_detail.last_name %></td>
+        <td><%= user_detail.gender %></td>
+        <td><%= user_detail.dob %></td>
+        <td><%= user_detail.official_phone %></td>
+        <td><%= user_detail.official_mobile %></td>
+        <td><%= user_detail.fax %></td>
+        <td><%= user_detail.official_email %></td>
+        <td><%= user_detail.pan_no %></td>
+        <td><%= user_detail.blood_group %></td>
+        <td><%= user_detail.department %></td>
+        <td><%= user_detail.designation %></td>
+        <td><%= user_detail.grade %></td>
+        <td><%= user_detail.religion %></td>
+        <td><%= user_detail.user_type %></td>
+        <td><%= user_detail.user %></td>
+        <td><%= link_to 'Show', user_detail %></td>
+        <td><%= link_to 'Edit', edit_user_detail_path(user_detail) %></td>
+        <td><%= link_to 'Destroy', user_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User detail', new_user_detail_path %>

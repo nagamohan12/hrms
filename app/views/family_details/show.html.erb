@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @family_detail.name %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @family_detail.dob %>
+</p>
+
+<p>
+  <strong>Nationality:</strong>
+  <%= @family_detail.nationality %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @family_detail.gender %>
+</p>
+
+<p>
+  <strong>Blood group:</strong>
+  <%= @family_detail.blood_group %>
+</p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @family_detail.profession %>
+</p>
+
+<p>
+  <strong>Relationship:</strong>
+  <%= @family_detail.relationship %>
+</p>
+
+<p>
+  <strong>Is dependent:</strong>
+  <%= @family_detail.is_dependent %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @family_detail.user %>
+</p>
+
+<%= link_to 'Edit', edit_family_detail_path(@family_detail) %> |
+<%= link_to 'Back', family_details_path %>

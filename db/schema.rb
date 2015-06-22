@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150617145406) do
+ActiveRecord::Schema.define(version: 20150622185507) do
+
+  create_table "addresses", force: :cascade do |t|
+    t.text     "permanent",  limit: 65535
+    t.text     "present",    limit: 65535
+    t.text     "emergency",  limit: 65535
+    t.integer  "user_id",    limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  add_index "addresses", ["user_id"], name: "index_addresses_on_user_id", using: :btree
 
   create_table "blood_groups", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -33,6 +44,23 @@ ActiveRecord::Schema.define(version: 20150617145406) do
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
   end
+
+  create_table "family_details", force: :cascade do |t|
+    t.string   "name",           limit: 255
+    t.date     "dob"
+    t.string   "nationality",    limit: 255
+    t.string   "gender",         limit: 255
+    t.integer  "blood_group_id", limit: 4
+    t.string   "profession",     limit: 255
+    t.string   "relationship",   limit: 255
+    t.string   "is_dependent",   limit: 255
+    t.integer  "user_id",        limit: 4
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "family_details", ["blood_group_id"], name: "index_family_details_on_blood_group_id", using: :btree
+  add_index "family_details", ["user_id"], name: "index_family_details_on_user_id", using: :btree
 
   create_table "grades", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -61,6 +89,28 @@ ActiveRecord::Schema.define(version: 20150617145406) do
     t.datetime "updated_at",                            null: false
   end
 
+  create_table "personnel_details", force: :cascade do |t|
+    t.string   "birth_place",              limit: 255
+    t.string   "caste",                    limit: 255
+    t.string   "nationality",              limit: 255
+    t.string   "voter_id",                 limit: 255
+    t.string   "aadhar_no",                limit: 255
+    t.string   "marital_status",           limit: 255
+    t.date     "anniversary_date"
+    t.string   "spouse_name",              limit: 255
+    t.integer  "no_of_children",           limit: 4
+    t.string   "personnel_email",          limit: 255
+    t.string   "personnel_email1",         limit: 255
+    t.integer  "personnel_mobile",         limit: 4
+    t.integer  "personnel_mobile1",        limit: 4
+    t.integer  "emergency_contact_number", limit: 4
+    t.integer  "user_id",                  limit: 4
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+  end
+
+  add_index "personnel_details", ["user_id"], name: "index_personnel_details_on_user_id", using: :btree
+
   create_table "religions", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.datetime "created_at",             null: false
@@ -78,11 +128,63 @@ ActiveRecord::Schema.define(version: 20150617145406) do
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
   add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
 
+  create_table "user_details", force: :cascade do |t|
+    t.string   "first_name",      limit: 255
+    t.string   "last_name",       limit: 255
+    t.string   "gender",          limit: 255
+    t.date     "dob"
+    t.integer  "official_phone",  limit: 4
+    t.integer  "official_mobile", limit: 4
+    t.integer  "fax",             limit: 4
+    t.string   "official_email",  limit: 255
+    t.string   "pan_no",          limit: 255
+    t.integer  "blood_group_id",  limit: 4
+    t.integer  "department_id",   limit: 4
+    t.integer  "designation_id",  limit: 4
+    t.integer  "grade_id",        limit: 4
+    t.integer  "religion_id",     limit: 4
+    t.integer  "user_type_id",    limit: 4
+    t.integer  "user_id",         limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
+
+  add_index "user_details", ["blood_group_id"], name: "index_user_details_on_blood_group_id", using: :btree
+  add_index "user_details", ["department_id"], name: "index_user_details_on_department_id", using: :btree
+  add_index "user_details", ["designation_id"], name: "index_user_details_on_designation_id", using: :btree
+  add_index "user_details", ["grade_id"], name: "index_user_details_on_grade_id", using: :btree
+  add_index "user_details", ["religion_id"], name: "index_user_details_on_religion_id", using: :btree
+  add_index "user_details", ["user_id"], name: "index_user_details_on_user_id", using: :btree
+  add_index "user_details", ["user_type_id"], name: "index_user_details_on_user_type_id", using: :btree
+
+  create_table "user_profession_details", force: :cascade do |t|
+    t.string   "emp_id",            limit: 255
+    t.date     "doj"
+    t.string   "status",            limit: 255
+    t.string   "reporting_manager", limit: 255
+    t.integer  "user_id",           limit: 4
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
+
+  add_index "user_profession_details", ["user_id"], name: "index_user_profession_details_on_user_id", using: :btree
+
   create_table "user_types", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
+
+  create_table "user_work_details", force: :cascade do |t|
+    t.date     "login"
+    t.date     "logout"
+    t.float    "total_time", limit: 24
+    t.integer  "user_id",    limit: 4
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  add_index "user_work_details", ["user_id"], name: "index_user_work_details_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -109,4 +211,17 @@ ActiveRecord::Schema.define(version: 20150617145406) do
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id", using: :btree
 
+  add_foreign_key "addresses", "users"
+  add_foreign_key "family_details", "blood_groups"
+  add_foreign_key "family_details", "users"
+  add_foreign_key "personnel_details", "users"
+  add_foreign_key "user_details", "blood_groups"
+  add_foreign_key "user_details", "departments"
+  add_foreign_key "user_details", "designations"
+  add_foreign_key "user_details", "grades"
+  add_foreign_key "user_details", "religions"
+  add_foreign_key "user_details", "user_types"
+  add_foreign_key "user_details", "users"
+  add_foreign_key "user_profession_details", "users"
+  add_foreign_key "user_work_details", "users"
 end

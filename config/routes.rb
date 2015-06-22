@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :user_details
+  resources :user_work_details
+  resources :user_profession_details
+  resources :addresses
+  resources :family_details
+  resources :personnel_details
   resources :locations
   resources :grades
   resources :user_types
@@ -16,7 +22,7 @@ Rails.application.routes.draw do
   devise_scope :user do
     root "devise/sessions#new"
   end
-
+  resources :users
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

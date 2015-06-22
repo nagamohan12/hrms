@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emp_id: MyString
+  doj: 2015-06-23
+  status: MyString
+  reporting_manager: MyString
+  user_id: 
+
+two:
+  emp_id: MyString
+  doj: 2015-06-23
+  status: MyString
+  reporting_manager: MyString
+  user_id: 

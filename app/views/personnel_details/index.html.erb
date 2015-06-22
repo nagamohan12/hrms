@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Personnel Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Birth place</th>
+      <th>Caste</th>
+      <th>Nationality</th>
+      <th>Voter</th>
+      <th>Aadhar no</th>
+      <th>Marital status</th>
+      <th>Anniversary date</th>
+      <th>Spouse name</th>
+      <th>No of children</th>
+      <th>Personnel email</th>
+      <th>Personnel email1</th>
+      <th>Personnel mobile</th>
+      <th>Personnel mobile1</th>
+      <th>Emergency contact number</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personnel_details.each do |personnel_detail| %>
+      <tr>
+        <td><%= personnel_detail.birth_place %></td>
+        <td><%= personnel_detail.caste %></td>
+        <td><%= personnel_detail.nationality %></td>
+        <td><%= personnel_detail.voter_id %></td>
+        <td><%= personnel_detail.aadhar_no %></td>
+        <td><%= personnel_detail.marital_status %></td>
+        <td><%= personnel_detail.anniversary_date %></td>
+        <td><%= personnel_detail.spouse_name %></td>
+        <td><%= personnel_detail.no_of_children %></td>
+        <td><%= personnel_detail.personnel_email %></td>
+        <td><%= personnel_detail.personnel_email1 %></td>
+        <td><%= personnel_detail.personnel_mobile %></td>
+        <td><%= personnel_detail.personnel_mobile1 %></td>
+        <td><%= personnel_detail.emergency_contact_number %></td>
+        <td><%= personnel_detail.user %></td>
+        <td><%= link_to 'Show', personnel_detail %></td>
+        <td><%= link_to 'Edit', edit_personnel_detail_path(personnel_detail) %></td>
+        <td><%= link_to 'Destroy', personnel_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personnel detail', new_personnel_detail_path %>

@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  birth_place: MyString
+  caste: MyString
+  nationality: MyString
+  voter_id: MyString
+  aadhar_no: MyString
+  marital_status: MyString
+  anniversary_date: 2015-06-22
+  spouse_name: MyString
+  no_of_children: 1
+  personnel_email: MyString
+  personnel_email1: MyString
+  personnel_mobile: 1
+  personnel_mobile1: 1
+  emergency_contact_number: 1
+  user_id: 
+
+two:
+  birth_place: MyString
+  caste: MyString
+  nationality: MyString
+  voter_id: MyString
+  aadhar_no: MyString
+  marital_status: MyString
+  anniversary_date: 2015-06-22
+  spouse_name: MyString
+  no_of_children: 1
+  personnel_email: MyString
+  personnel_email1: MyString
+  personnel_mobile: 1
+  personnel_mobile1: 1
+  emergency_contact_number: 1
+  user_id: 

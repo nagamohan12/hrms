@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dob: 2015-06-22
+  nationality: MyString
+  gender: MyString
+  blood_group_id: 
+  profession: MyString
+  relationship: MyString
+  is_dependent: MyString
+  user_id: 
+
+two:
+  name: MyString
+  dob: 2015-06-22
+  nationality: MyString
+  gender: MyString
+  blood_group_id: 
+  profession: MyString
+  relationship: MyString
+  is_dependent: MyString
+  user_id: 
