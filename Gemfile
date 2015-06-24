@@ -42,6 +42,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 	gem 'cancancan'
 	gem 'rolify'
 	gem 'devise-bootstrap-views'
+  gem 'bootstrap_form'
+  gem 'bootstrap-datepicker-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,0 +1,16 @@
+<%= simple_form_for @user,  wrapper: :horizontal_form,
+  html: { class: 'form-inline' } do |f| %>
+  <%= f.error_notification %>
+  <div>
+	  <%= f.input :user_name, placeholder: 'Enter user name' %>
+  	<%= f.input :email %>
+  </div>
+  <%= f.fields_for :user_detail do |ud|%>
+  	<div>
+  		<%= ud.input :first_name %>
+  		<%= ud.input :last_name %>
+  		<%= ud.input :gender, collection: ['male','female','unknown']%>
+  	</div>
+  <% end %>
+  <%= f.button :submit %>
+<% end %>

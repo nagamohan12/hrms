@@ -43,9 +43,12 @@ GEM
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-datepicker-rails (1.4.0)
+      railties (>= 3.0)
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
+    bootstrap_form (2.3.0)
     bootswatch-rails (3.2.4)
       railties (>= 3.1)
     builder (3.2.2)
@@ -181,7 +184,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-datepicker-rails
   bootstrap-sass (~> 3.3.4)
+  bootstrap_form
   bootswatch-rails
   byebug
   cancancan
