@@ -1,0 +1,7 @@
+<%= simple_form_for @department,  wrapper: :inline_form,
+  html: { class: 'form-inline' } do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name , placeholder: 'Enter Deparment Name'%>
+  <%= f.input :is_active, label: 'Active' %>
+  <%= f.button :submit %>
+<% end %>

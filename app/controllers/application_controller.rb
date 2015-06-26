@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
 
   protected
   def after_sign_in_path_for(resource_or_scope)
-    applications_path
+    designations_path
   end
 
   def layout_by_resource

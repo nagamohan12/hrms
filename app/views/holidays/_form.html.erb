@@ -1,0 +1,8 @@
+<%= simple_form_for @holiday,  wrapper: :inline_form,
+  html: { class: 'form-inline' } do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, placeholder: 'Enter New Holiday' %>
+  <%= f.input :date %>
+  <%= f.input :year %>
+  <%= f.button :submit %>
+<% end %>

@@ -1,0 +1,65 @@
+<%= simple_form_for @user do |f| %>
+  <div class="add-user-form-contain">
+    <div class="fix-title-box">
+      <h3 class="section-title">Add EMPLOYEE</h3>
+      <div class="section-content">
+        <div class="row">
+          <div class="col-xs-4">
+            <%= f.input :user_name, label: "User Name" %>
+          </div>
+          <div class="col-xs-4">
+              <%= f.input :email %>
+          </div>
+        </div>
+      </div>
+      <%= f.fields_for :user_detail do |ud|%>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 dob">
+              <% ud.input :dob, start_year: 1900, end_year: Date.today.year, label: "Date of Birth" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <%= ud.input :first_name %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :last_name %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :gender, as: :select, include_blank: false, collection: User::GENDERS.map { |g| [g.titleize, g] } %>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-xs-3">
+              <%= ud.input :official_phone, label: "Phone Primary" %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :official_mobile, label: "Phone Secondary" %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :blood_group, as: :select, include_blank: false, collection: BloodGroup.all.map { |g| [g.name.titleize, g] } %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <%= ud.input :fax, label: "Fax" %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :pan_no, label: "Pan Num" %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :department, as: :select, include_blank: false, collection: Department.all.map { |g| [g.name.titleize, g] } %>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <%= ud.input :designation, as: :select, include_blank: false, collection: Designation.all.map { |g| [g.name.titleize, g] } %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <hr/>
+  <%= f.button :submit %>
+<% end %>

@@ -1,0 +1,42 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//colors
+$white: #fff;
+$color_iron_approx: #d6d6d6;
+
+.add-user-form-contain {
+  position: relative;
+}
+.section-title {
+  background: $white none repeat scroll 0 0;
+  bottom: auto;
+  height: auto;
+  left: 0;
+  margin: 0;
+  padding: 14px 0 11px;
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.section-content {
+  max-height: 100%;
+  padding: 10px;
+  border: 1px solid $color_iron_approx;
+  border-radius: 4px;
+}
+.dob select {
+  float: right;
+  display: inline-block;
+  &:first-child {
+    width: 29.9%;
+  }
+  &:nth-child(2) {
+    width: 45%;
+    float: left;
+  }
+  &:last-child {
+    width: 24.9%;
+  }
+}

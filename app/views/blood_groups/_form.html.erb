@@ -1,0 +1,7 @@
+<%= simple_form_for @blood_group,  wrapper: :inline_form,
+  html: { class: 'form-inline' } do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, placeholder: 'Enter New Blood Group' %>
+  <%= f.input :is_active %>
+  <%= f.button :submit %>
+<% end %>

@@ -1,5 +1,22 @@
 Rails.application.routes.draw do
+  resources :user_details
+  resources :user_work_details
+  resources :user_profession_details
+  resources :addresses
+  resources :family_details
+  resources :personnel_details
+  resources :locations
+  resources :grades
+  resources :user_types
+  resources :religions
+  resources :languages
+  resources :blood_groups
+  resources :holidays
+  resources :designations
+  resources :departments
+  resources :users
   devise_for :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,7 +24,7 @@ Rails.application.routes.draw do
   devise_scope :user do
     root "devise/sessions#new"
   end
-
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

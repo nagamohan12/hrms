@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing User Profession Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Emp</th>
+      <th>Doj</th>
+      <th>Status</th>
+      <th>Reporting manager</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_profession_details.each do |user_profession_detail| %>
+      <tr>
+        <td><%= user_profession_detail.emp_id %></td>
+        <td><%= user_profession_detail.doj %></td>
+        <td><%= user_profession_detail.status %></td>
+        <td><%= user_profession_detail.reporting_manager %></td>
+        <td><%= user_profession_detail.user %></td>
+        <td><%= link_to 'Show', user_profession_detail %></td>
+        <td><%= link_to 'Edit', edit_user_profession_detail_path(user_profession_detail) %></td>
+        <td><%= link_to 'Destroy', user_profession_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User profession detail', new_user_profession_detail_path %>
