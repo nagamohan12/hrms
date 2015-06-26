@@ -1,0 +1,92 @@
+<%= simple_form_for @employee, id: 'new_employee' do |f| %>
+  <div class="add-user-form-contain">
+    <div class="fix-title-box">
+      <h3 class="section-title">NEW EMPLOYEE</h3>
+      <div class="section-content">
+        <div class="row">
+          <div class="col-xs-4">
+            <%= f.input :user_name, label: "User Name",required: true %>
+          </div>
+          <div class="col-xs-4">
+              <%= f.input :email %>
+          </div>
+        
+      <%= f.fields_for :user_detail do |ud|%>
+        <div class="col-xs-3">
+         <%= ud.input :user_type,:collection => UserType.all,:label_method => :name,:value_method => :id,:label => "User Type" ,:include_blank => true %>
+        </div>
+      </div>
+    </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 dob">
+              <% ud.input :dob, start_year: 1900, end_year: Date.today.year, label: "Date of Birth" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <%= ud.input :first_name %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :last_name %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :gender, as: :select, include_blank: false, collection: Employee::GENDERS.map { |g| [g.titleize, g] } %>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-xs-3">
+              <%= ud.input :official_phone, label: "Phone Primary" %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :official_mobile, label: "Phone Secondary" %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :blood_group,:collection => BloodGroup.all,:label_method => :name,:value_method => :id,:label => "Blood Group" ,:include_blank => true %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <%= ud.input :fax, label: "Fax" %>
+            </div>
+            <div class="col-xs-3">
+              <%= ud.input :pan_no, label: "Pan Num" %>
+            </div>
+            <div class="col-xs-3">
+            <%= ud.input :blood_group,:collection => BloodGroup.all,:label_method => :name,:value_method => :id,:label => "Department" ,:include_blank => true %>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <%= ud.input :designation,:collection => Designation.all,:label_method => :name,:value_method => :id,:label => "Designation" ,:include_blank => true %>
+          </div>
+          <div class="col-xs-3">
+            <%= ud.input :grade,:collection => Grade.all,:label_method => :name,:value_method => :id,:label => "Grade" ,:include_blank => true %>
+          </div>
+          <div class="col-xs-3">
+            <%= ud.input :religion,:collection => Religion.all,:label_method => :name,:value_method => :id,:label => "Religion" ,:include_blank => true %>
+          </div>
+        </div>
+      <% end %>
+      <% f.fields_for :user_profession_detail do |upd|%>  
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-4">
+              <%= upd.input :doj, label: "Date Of Joining" %>
+            </div>
+            <div class="col-xs-4">
+                <%= upd.input :status %>
+            </div>
+          </div>
+        </div>
+      <%end%>
+
+    </div>
+  </div>
+  <hr/>
+  <%= f.button :submit %>
+<% end %>
+
+<script>
+
+</script>
