@@ -6,4 +6,5 @@ class UserDetail < ActiveRecord::Base
   belongs_to :religion
   belongs_to :user_type
   belongs_to :user
+  validates_presence_of :first_name
 end

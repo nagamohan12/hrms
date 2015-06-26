@@ -1,0 +1,12 @@
+<%= f.fields_for :user_profession_detail do |upd|%>  
+  <div class="section-content">
+    <div class="row">
+      <div class="col-xs-4">
+        <%= upd.input :doj, label: "User Name" %>
+      </div>
+      <div class="col-xs-4">
+          <%= upd.input :status %>
+      </div>
+    </div>
+  </div>
+<%end%>

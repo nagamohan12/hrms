@@ -11,17 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624170710) do
+ActiveRecord::Schema.define(version: 20150626093005) do
 
   create_table "addresses", force: :cascade do |t|
-    t.text     "permanent",  limit: 65535
-    t.text     "present",    limit: 65535
-    t.text     "emergency",  limit: 65535
-    t.integer  "user_id",    limit: 4
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.text     "permanent",   limit: 65535
+    t.text     "present",     limit: 65535
+    t.text     "emergency",   limit: 65535
+    t.integer  "user_id",     limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "employee_id", limit: 4
   end
 
+  add_index "addresses", ["employee_id"], name: "index_addresses_on_employee_id", using: :btree
   add_index "addresses", ["user_id"], name: "index_addresses_on_user_id", using: :btree
 
   create_table "blood_groups", force: :cascade do |t|
@@ -45,6 +47,17 @@ ActiveRecord::Schema.define(version: 20150624170710) do
     t.datetime "updated_at",                            null: false
   end
 
+  create_table "employees", force: :cascade do |t|
+    t.string   "emp_id",     limit: 255
+    t.string   "email",      limit: 255
+    t.string   "user_name",  limit: 255
+    t.integer  "user_id",    limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "employees", ["user_id"], name: "index_employees_on_user_id", using: :btree
+
   create_table "family_details", force: :cascade do |t|
     t.string   "name",           limit: 255
     t.date     "dob"
@@ -57,9 +70,11 @@ ActiveRecord::Schema.define(version: 20150624170710) do
     t.integer  "user_id",        limit: 4
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.integer  "employee_id",    limit: 4
   end
 
   add_index "family_details", ["blood_group_id"], name: "index_family_details_on_blood_group_id", using: :btree
+  add_index "family_details", ["employee_id"], name: "index_family_details_on_employee_id", using: :btree
   add_index "family_details", ["user_id"], name: "index_family_details_on_user_id", using: :btree
 
   create_table "grades", force: :cascade do |t|
@@ -107,8 +122,10 @@ ActiveRecord::Schema.define(version: 20150624170710) do
     t.integer  "user_id",                  limit: 4
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
+    t.integer  "employee_id",              limit: 4
   end
 
+  add_index "personnel_details", ["employee_id"], name: "index_personnel_details_on_employee_id", using: :btree
   add_index "personnel_details", ["user_id"], name: "index_personnel_details_on_user_id", using: :btree
 
   create_table "religions", force: :cascade do |t|
@@ -147,11 +164,13 @@ ActiveRecord::Schema.define(version: 20150624170710) do
     t.integer  "user_id",         limit: 4
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+    t.integer  "employee_id",     limit: 4
   end
 
   add_index "user_details", ["blood_group_id"], name: "index_user_details_on_blood_group_id", using: :btree
   add_index "user_details", ["department_id"], name: "index_user_details_on_department_id", using: :btree
   add_index "user_details", ["designation_id"], name: "index_user_details_on_designation_id", using: :btree
+  add_index "user_details", ["employee_id"], name: "index_user_details_on_employee_id", using: :btree
   add_index "user_details", ["grade_id"], name: "index_user_details_on_grade_id", using: :btree
   add_index "user_details", ["religion_id"], name: "index_user_details_on_religion_id", using: :btree
   add_index "user_details", ["user_id"], name: "index_user_details_on_user_id", using: :btree
@@ -165,8 +184,10 @@ ActiveRecord::Schema.define(version: 20150624170710) do
     t.integer  "user_id",           limit: 4
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
+    t.integer  "employee_id",       limit: 4
   end
 
+  add_index "user_profession_details", ["employee_id"], name: "index_user_profession_details_on_employee_id", using: :btree
   add_index "user_profession_details", ["user_id"], name: "index_user_profession_details_on_user_id", using: :btree
 
   create_table "user_types", force: :cascade do |t|
@@ -178,12 +199,14 @@ ActiveRecord::Schema.define(version: 20150624170710) do
   create_table "user_work_details", force: :cascade do |t|
     t.date     "login"
     t.date     "logout"
-    t.float    "total_time", limit: 24
-    t.integer  "user_id",    limit: 4
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.float    "total_time",  limit: 24
+    t.integer  "user_id",     limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "employee_id", limit: 4
   end
 
+  add_index "user_work_details", ["employee_id"], name: "index_user_work_details_on_employee_id", using: :btree
   add_index "user_work_details", ["user_id"], name: "index_user_work_details_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
@@ -212,17 +235,24 @@ ActiveRecord::Schema.define(version: 20150624170710) do
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id", using: :btree
 
+  add_foreign_key "addresses", "employees"
   add_foreign_key "addresses", "users"
+  add_foreign_key "employees", "users"
   add_foreign_key "family_details", "blood_groups"
+  add_foreign_key "family_details", "employees"
   add_foreign_key "family_details", "users"
+  add_foreign_key "personnel_details", "employees"
   add_foreign_key "personnel_details", "users"
   add_foreign_key "user_details", "blood_groups"
   add_foreign_key "user_details", "departments"
   add_foreign_key "user_details", "designations"
+  add_foreign_key "user_details", "employees"
   add_foreign_key "user_details", "grades"
   add_foreign_key "user_details", "religions"
   add_foreign_key "user_details", "user_types"
   add_foreign_key "user_details", "users"
+  add_foreign_key "user_profession_details", "employees"
   add_foreign_key "user_profession_details", "users"
+  add_foreign_key "user_work_details", "employees"
   add_foreign_key "user_work_details", "users"
 end

@@ -26,3 +26,13 @@
     <% end %>
   </tbody>
 </table>
+<script type="text/javascript">
+  jQuery(function($) {
+  return $(document).ready(function() {
+    return $("#new_form").click(function() {
+      $("#new_model_form").css("display", "block");
+      return $(this).hide();
+    });
+  });
+});
+</script>

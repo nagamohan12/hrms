@@ -43,6 +43,10 @@ gem 'cancancan'
 gem 'rolify'
 gem 'devise-bootstrap-views'
 gem 'bootstrap_form'
+# gem 'client_side_validations'
+# gem 'client_side_validations-simple_form'
+# gem 'client_side_validations', github: 'DavyJonesLocker/client_side_validations'
+# gem 'client_side_validations-simple_form', github: 'DavyJonesLocker/client_side_validations-simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

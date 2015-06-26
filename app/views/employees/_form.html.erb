@@ -1,7 +1,7 @@
-<%= simple_form_for @user do |f| %>
+<%= simple_form_for @employee do |f| %>
   <div class="add-user-form-contain">
     <div class="fix-title-box">
-      <h3 class="section-title">Add EMPLOYEE</h3>
+      <h3 class="section-title">NEW EMPLOYEE</h3>
       <div class="section-content">
         <div class="row">
           <div class="col-xs-4">
@@ -10,9 +10,13 @@
           <div class="col-xs-4">
               <%= f.input :email %>
           </div>
+        
+      <%= f.fields_for :user_detail do |ud|%>
+        <div class="col-xs-3">
+         <%= ud.input :user_type_id,:collection => UserType.all,:label_method => :name,:value_method => :id,:label => "User Type" ,:include_blank => true %>
         </div>
       </div>
-      <%= f.fields_for :user_detail do |ud|%>
+    </div>
         <div class="section-content">
           <div class="row">
             <div class="col-xs-12 dob">
@@ -27,7 +31,7 @@
               <%= ud.input :last_name %>
             </div>
             <div class="col-xs-3">
-              <%= ud.input :gender, as: :select, include_blank: false, collection: User::GENDERS.map { |g| [g.titleize, g] } %>
+              <%= ud.input :gender, as: :select, include_blank: false, collection: Employee::GENDERS.map { |g| [g.titleize, g] } %>
             </div>
           </div>
           
@@ -39,7 +43,7 @@
               <%= ud.input :official_mobile, label: "Phone Secondary" %>
             </div>
             <div class="col-xs-3">
-              <%= ud.input :blood_group, as: :select, include_blank: false, collection: BloodGroup.all.map { |g| [g.name.titleize, g] } %>
+              <%= ud.input :blood_group_id,:collection => BloodGroup.all,:label_method => :name,:value_method => :id,:label => "Blood Group" ,:include_blank => true %>
             </div>
           </div>
           <div class="row">
@@ -50,25 +54,36 @@
               <%= ud.input :pan_no, label: "Pan Num" %>
             </div>
             <div class="col-xs-3">
-            <%= ud.input :department,:collection => Department.all,:label_method => :name,:value_method => :id,:label => "Department" ,:include_blank => false %>
+            <%= ud.input :department_id,:collection => Department.all,:label_method => :name,:value_method => :id,:label => "Department" ,:include_blank => true %>
             </div>
           </div>
+        <div class="row">
           <div class="col-xs-3">
-            <%= ud.input :designation,:collection => Designation.all,:label_method => :name,:value_method => :id,:label => "Designation" ,:include_blank => false %>
+            <%= ud.input :designation_id,:collection => Designation.all,:label_method => :name,:value_method => :id,:label => "Designation" ,:include_blank => true %>
           </div>
           <div class="col-xs-3">
-            <%= ud.input :grade,:collection => Grade.all,:label_method => :name,:value_method => :id,:label => "Grade" ,:include_blank => false %>
+            <%= ud.input :grade_id,:collection => Grade.all,:label_method => :name,:value_method => :id,:label => "Grade" ,:include_blank => true %>
           </div>
           <div class="col-xs-3">
-            <%= ud.input :religion,:collection => Religion.all,:label_method => :name,:value_method => :id,:label => "Religion" ,:include_blank => false %>
-          </div>
-          <div class="col-xs-3">
-           <%= ud.input :user_type,:collection => UserType.all,:label_method => :name,:value_method => :id,:label => "User Type" ,:include_blank => false %>
+            <%= ud.input :religion_id,:collection => Religion.all,:label_method => :name,:value_method => :id,:label => "Religion" ,:include_blank => true %>
           </div>
         </div>
       <% end %>
+      <% f.fields_for :user_profession_detail do |upd|%>  
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-4">
+              <%= upd.input :doj, label: "Date Of Joining" %>
+            </div>
+            <div class="col-xs-4">
+                <%= upd.input :status %>
+            </div>
+          </div>
+        </div>
+      <%end%>
+
     </div>
   </div>
   <hr/>
-  <%= f.button :submit %>
+      <%= f.button :submit %>
 <% end %>
