@@ -15,8 +15,8 @@ class EmployeesController < ApplicationController
   # GET /employees/new
   def new
     @employee = Employee.new
-    @employee.build_user_detail
-    @employee.build_user_profession_detail
+    # @employee.build_user_detail
+    # @employee.build_user_profession_detail
   end
 
   # GET /employees/1/edit
@@ -26,11 +26,11 @@ class EmployeesController < ApplicationController
   # POST /employees
   # POST /employees.json
   def create
-    binding.pry
     @employee = Employee.new(employee_params)
-
+    @user = User.new(email: employee_params[:email],user_name: employee_params[:user_name])
+    @user.password = employee_params[:user_name]
     respond_to do |format|
-      if @employee.save
+      if @employee.save && @user.save
         format.html { redirect_to @employee, notice: 'Employee was successfully created.' }
         format.json { render :show, status: :created, location: @employee }
       else
@@ -73,6 +73,6 @@ class EmployeesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def employee_params
-    params.require(:employee).permit(:emp_id, :email, :username, :user_detail_attributes, :user_profession_detail_attributes)
+    params.require(:employee).permit(:emp_id, :email, :user_name, :user_detail_attributes => [:id, :first_name, :last_name, :gender, :dob, :official_phone, :official_mobile, :fax, :official_email, :pan_no, :blood_group_id, :department_id, :designation_id, :grade_id, :religion_id, :user_type_id, :user_id], :user_profession_detail_attributes => [] )
   end
 end
