@@ -1,0 +1,18 @@
+<%= simple_form_for @sallary_structure do |f| %>
+  <div class="add-user-form-contain">
+    <div class="fix-title-box">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-3">
+            <%= f.input :sallary_component_detail_id,:collection => SallaryComponentDetail.all,:label_method => :name,:value_method => :id,:label => "Component" ,:include_blank => true %>
+          </div>
+          <div class="col-md-3">
+            <%= f.input :amount, label: 'Amount' %>
+            <%= f.hidden_field :employee_id, value: @employee.id %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= f.button :submit %>
+<% end %>

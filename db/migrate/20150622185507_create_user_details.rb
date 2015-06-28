@@ -5,9 +5,9 @@ class CreateUserDetails < ActiveRecord::Migration
       t.string :last_name
       t.string :gender
       t.date :dob
-      t.integer :official_phone
-      t.integer :official_mobile
-      t.integer :fax
+      t.string :official_phone
+      t.string :official_mobile
+      t.string :fax
       t.string :official_email
       t.string :pan_no
       t.belongs_to :blood_group, index: true, foreign_key: true

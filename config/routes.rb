@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :sallary_structures
+  resources :sallary_component_details
   resources :employees
   resources :user_details
   resources :user_work_details
@@ -17,6 +19,7 @@ Rails.application.routes.draw do
   resources :departments
   devise_for :users
   resources :users
+  resources :masters
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -25,7 +28,9 @@ Rails.application.routes.draw do
   devise_scope :user do
     root "devise/sessions#new"
   end
-  
+  get 'employees/:id/attendance' => 'employees#attendance', as: :attendance
+  get 'sallary_structures/:employee_id/employee_sallary_structure' => 'sallary_structures#employee_sallary_structure', as: :employee_sallary_structure
+  # get 'employees/:id/sallary_structure' => 'employees#sallary_structure', as: :sallary_structure
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

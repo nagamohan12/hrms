@@ -52,3 +52,9 @@ user_types = %w(Permanent Contract)
 user_types.each do |ut|
   UserType.where(name: ut).first_or_create
 end
+
+# Blood Group
+blood_groups = %w(A+ve A-ve B+ve B-ve AB+ve AB-ve O+ve O-ve)
+blood_groups.each do |bg|
+  BloodGroup.where(name: bg, is_active: true).first_or_create
+end

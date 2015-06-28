@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+<button class='btn btn-primary' id = "new_form">New</button>
+<div id="new_model_form" style="display:none;">
+  <%= render :partial => "new", locals: {sallary_structure: SallaryStructure.new, employee: @employee}%>
+</div>
+
+<h1>Listing Sallary Structure for <%= "#{@employee.user_name}" %></h1>
+
+<table class='table table-striped table-hover'>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sallary_structures.each do |sallary_structure| %>
+      <tr>
+        <td><%= sallary_structure.sallary_component_detail.name %></td>
+        <td><%= sallary_structure.amount %></td>
+        <td><% link_to 'Show', sallary_structure %></td>
+        <td><%= link_to 'Edit', edit_sallary_structure_path(sallary_structure) %></td>
+        <td><% link_to 'Destroy', sallary_structure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    <tr>
+      <td><b><%= "Month Gross" %></b></td>
+      <td><%= @employee.month_gross %></td>
+    </tr>
+    <tr>
+      <td><b><%= "CTC" %></b></td>
+      <td><%= @employee.ctc %></td>
+    </tr>
+    <tr>
+      <td><b><%= "Annual Gross" %></b></td>
+      <td><%= @employee.annual_gross %></td>
+    </tr>
+    <tr>
+      <td><b><%= "Net Pay" %></b></td>
+      <td><%= @employee.month_gross %></td>
+    </tr>
+  </tbody>
+</table>
+<%= link_to 'Back', employees_path%>
+<br>
+<script type="text/javascript">
+  jQuery(function($) {
+  return $(document).ready(function() {
+    return $("#new_form").click(function() {
+      $("#new_model_form").css("display", "block");
+      return $(this).hide();
+    });
+  });
+});
+</script>

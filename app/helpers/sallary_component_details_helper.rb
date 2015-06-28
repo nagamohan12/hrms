@@ -1,0 +1,2 @@
+module SallaryComponentDetailsHelper
+end

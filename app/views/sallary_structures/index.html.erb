@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+<button class='btn btn-primary' id = "new_form">New</button>
+<div id="new_model_form" style="display:none;">
+  <%= render :partial => "new", locals: {sallary_structure: SallaryStructure.new}%>
+</div>
+
+<h1>Listing Sallary Structures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sallary_structures.each do |sallary_structure| %>
+      <tr>
+        <td><%= sallary_structure.name %></td>
+        <td><%= sallary_structure.amount %></td>
+        <td><% link_to 'Show', sallary_structure %></td>
+        <td><%= link_to 'Edit', edit_sallary_structure_path(sallary_structure) %></td>
+        <td><% link_to 'Destroy', sallary_structure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<script type="text/javascript">
+  jQuery(function($) {
+  return $(document).ready(function() {
+    return $("#new_form").click(function() {
+      $("#new_model_form").css("display", "block");
+      return $(this).hide();
+    });
+  });
+});
+</script>
