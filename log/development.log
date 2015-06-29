@@ -61026,3 +61026,1974 @@ Processing by SallaryStructuresController#employee_sallary_structure as HTML
   Rendered layouts/_head.html.erb (371.4ms)
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
 Completed 200 OK in 423ms (Views: 420.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 17:44:30 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (174.7ms)
+  Rendered sallary_structures/_new.html.erb (176.3ms)
+  [1m[35mSallaryStructure Load (0.2ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1
+  [1m[36mSallaryComponentDetail Load (0.3ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.1ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (202.5ms)
+  Rendered layouts/_head.html.erb (436.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 732ms (Views: 665.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/employees.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/family_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/personnel_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/sallary_component_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/sallary_structures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/user_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/user_profession_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/user_work_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/users.self-1826e31b3684600c8fddbd56c33d200a98414e6d280fe87e1676e3b83e41a0b3.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/application.self-1d35e03c661d86eb286e9ee862cb4cb7b90801e92c05c74e67c39c7a7f877654.css?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/employees.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/family_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/personnel_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/sallary_component_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/sallary_structures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/user_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/user_profession_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/user_work_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/users.self-8f234f0d32ac87623386f9e069e6a0f0ec155672c2b9a661eae1acc72421511c.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-28 17:44:31 +0530
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.4ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (42.7ms)
+  Rendered sallary_structures/_new.html.erb (44.0ms)
+  [1m[35mSallaryStructure Load (0.3ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.2ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (49.3ms)
+  Rendered layouts/_head.html.erb (266.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 325ms (Views: 320.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/employees.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/personnel_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/family_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:26 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/sallary_component_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/sallary_structures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/user_profession_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/user_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/user_work_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/users.self-1826e31b3684600c8fddbd56c33d200a98414e6d280fe87e1676e3b83e41a0b3.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/application.self-1d35e03c661d86eb286e9ee862cb4cb7b90801e92c05c74e67c39c7a7f877654.css?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/employees.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/family_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/personnel_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/sallary_component_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/sallary_structures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/user_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/user_profession_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/user_work_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/users.self-8f234f0d32ac87623386f9e069e6a0f0ec155672c2b9a661eae1acc72421511c.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-28 17:47:27 +0530
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (46.4ms)
+  Rendered sallary_structures/_new.html.erb (47.9ms)
+  [1m[35mSallaryStructure Load (0.2ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.1ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (54.9ms)
+  Rendered layouts/_head.html.erb (250.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 315ms (Views: 310.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/family_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/employees.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/personnel_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/sallary_component_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/sallary_structures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/user_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/user_profession_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/user_work_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/users.self-1826e31b3684600c8fddbd56c33d200a98414e6d280fe87e1676e3b83e41a0b3.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/application.self-1d35e03c661d86eb286e9ee862cb4cb7b90801e92c05c74e67c39c7a7f877654.css?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:15 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/employees.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/family_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/personnel_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/sallary_component_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/sallary_structures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/user_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/user_profession_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/user_work_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/users.self-8f234f0d32ac87623386f9e069e6a0f0ec155672c2b9a661eae1acc72421511c.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-28 17:48:16 +0530
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure.pdf" for 127.0.0.1 at 2015-06-28 17:48:18 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as PDF
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+***************WICKED***************
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+ActionView::MissingTemplate (Missing template sallary_structures/employee_sallary_structure with {:locale=>[:en], :formats=>[:pdf], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/nagamohan/projects/hrms/app/views"
+  * "/home/nagamohan/.rvm/gems/ruby-2.1.2/gems/devise-bootstrap-views-0.0.5/app/views"
+  * "/home/nagamohan/.rvm/gems/ruby-2.1.2/gems/devise-3.4.1/app/views"
+):
+  app/controllers/sallary_structures_controller.rb:18:in `block (2 levels) in employee_sallary_structure'
+  app/controllers/sallary_structures_controller.rb:15:in `employee_sallary_structure'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (21.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.9ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure.pdf" for 127.0.0.1 at 2015-06-28 17:48:44 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as PDF
+  Parameters: {"employee_id"=>"1"}
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+ActionView::MissingTemplate (Missing template sallary_structures/employee_sallary_structure with {:locale=>[:en], :formats=>[:pdf], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/nagamohan/projects/hrms/app/views"
+  * "/home/nagamohan/.rvm/gems/ruby-2.1.2/gems/devise-bootstrap-views-0.0.5/app/views"
+  * "/home/nagamohan/.rvm/gems/ruby-2.1.2/gems/devise-3.4.1/app/views"
+):
+  app/controllers/sallary_structures_controller.rb:18:in `block (2 levels) in employee_sallary_structure'
+  app/controllers/sallary_structures_controller.rb:15:in `employee_sallary_structure'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (20.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (26.1ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 17:49:07 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (43.3ms)
+  Rendered sallary_structures/_new.html.erb (44.1ms)
+  [1m[35mSallaryStructure Load (0.3ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.2ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (50.1ms)
+  Rendered layouts/_head.html.erb (261.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 320ms (Views: 315.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/family_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/employees.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/personnel_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/sallary_component_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/sallary_structures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/user_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/user_profession_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/user_work_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/users.self-1826e31b3684600c8fddbd56c33d200a98414e6d280fe87e1676e3b83e41a0b3.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/application.self-1d35e03c661d86eb286e9ee862cb4cb7b90801e92c05c74e67c39c7a7f877654.css?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/employees.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/family_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/personnel_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/sallary_component_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/sallary_structures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/user_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/user_profession_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/user_work_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/users.self-8f234f0d32ac87623386f9e069e6a0f0ec155672c2b9a661eae1acc72421511c.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-28 17:49:08 +0530
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 17:49:10 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (42.3ms)
+  Rendered sallary_structures/_new.html.erb (43.6ms)
+  [1m[35mSallaryStructure Load (0.3ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.1ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (51.7ms)
+  Rendered layouts/_head.html.erb (339.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 399ms (Views: 395.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 17:49:14 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (52.3ms)
+  Rendered sallary_structures/_new.html.erb (53.1ms)
+  [1m[35mSallaryStructure Load (0.2ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.1ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (57.0ms)
+  Rendered layouts/_head.html.erb (264.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 327ms (Views: 324.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-06-28 17:54:14 +0530
+Processing by EmployeesController#index as HTML
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT `employees`.* FROM `employees`
+  [1m[36mUserDetail Load (0.1ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 1 LIMIT 1[0m
+  [1m[35mUserType Load (0.2ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1
+  [1m[36mUserDetail Load (0.2ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mUserType Load (0.2ms)[0m  [1mSELECT `user_types`.* FROM `user_types`[0m
+  [1m[35mBloodGroup Load (0.2ms)[0m  SELECT `blood_groups`.* FROM `blood_groups`
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  [1m[35mDesignation Load (0.2ms)[0m  SELECT `designations`.* FROM `designations`
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  [1m[35mReligion Load (0.2ms)[0m  SELECT `religions`.* FROM `religions`
+  Rendered employees/_form.html.erb (768.6ms)
+  Rendered employees/_new.html.erb (783.0ms)
+  Rendered employees/index.html.erb within layouts/application (861.5ms)
+  Rendered layouts/_head.html.erb (284.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 1174ms (Views: 1153.2ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 17:54:18 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (41.0ms)
+  Rendered sallary_structures/_new.html.erb (42.0ms)
+  [1m[35mSallaryStructure Load (0.2ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.2ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (55.5ms)
+  Rendered layouts/_head.html.erb (335.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 403ms (Views: 395.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure.df" for 127.0.0.1 at 2015-06-28 17:54:25 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as 
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.9ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/sallary_structures_controller.rb:15:in `employee_sallary_structure'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.8ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.0ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (27.3ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure.pdf" for 127.0.0.1 at 2015-06-28 17:54:29 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as PDF
+  Parameters: {"employee_id"=>"1"}
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+ActionView::MissingTemplate (Missing template sallary_structures/employee_sallary_structure with {:locale=>[:en], :formats=>[:pdf], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/nagamohan/projects/hrms/app/views"
+  * "/home/nagamohan/.rvm/gems/ruby-2.1.2/gems/devise-bootstrap-views-0.0.5/app/views"
+  * "/home/nagamohan/.rvm/gems/ruby-2.1.2/gems/devise-3.4.1/app/views"
+):
+  app/controllers/sallary_structures_controller.rb:18:in `block (2 levels) in employee_sallary_structure'
+  app/controllers/sallary_structures_controller.rb:15:in `employee_sallary_structure'
+
+
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (19.0ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/nagamohan/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (27.0ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 17:54:50 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (77.4ms)
+  Rendered sallary_structures/_new.html.erb (78.1ms)
+  [1m[35mSallaryStructure Load (0.3ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.2ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (85.7ms)
+  Rendered layouts/_head.html.erb (244.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 337ms (Views: 331.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-06-28 17:55:27 +0530
+Processing by EmployeesController#index as HTML
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees`
+  [1m[36mUserDetail Load (0.3ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 1 LIMIT 1[0m
+  [1m[35mUserType Load (0.1ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1
+  [1m[36mUserDetail Load (0.1ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mUserType Load (0.6ms)[0m  [1mSELECT `user_types`.* FROM `user_types`[0m
+  [1m[35mBloodGroup Load (0.2ms)[0m  SELECT `blood_groups`.* FROM `blood_groups`
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  [1m[35mDesignation Load (0.2ms)[0m  SELECT `designations`.* FROM `designations`
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  [1m[35mReligion Load (0.1ms)[0m  SELECT `religions`.* FROM `religions`
+  Rendered employees/_form.html.erb (720.9ms)
+  Rendered employees/_new.html.erb (729.1ms)
+  Rendered employees/index.html.erb within layouts/application (743.1ms)
+  Rendered layouts/_head.html.erb (293.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 1046ms (Views: 1036.5ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/employees/1/attendance" for 127.0.0.1 at 2015-06-28 17:55:29 +0530
+Processing by EmployeesController#attendance as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36mUserWorkDetail Load (0.2ms)[0m  [1mSELECT `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 1[0m
+  Rendered employees/attendance.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_head.html.erb (254.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 280ms (Views: 270.3ms | ActiveRecord: 2.5ms)
+  [1m[36mEmployee Load (0.4ms)[0m  [1mSELECT  `employees`.* FROM `employees`  ORDER BY `employees`.`id` DESC LIMIT 1[0m
+  [1m[35mUserWorkDetail Load (0.2ms)[0m  SELECT `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 2
+  [1m[36m (1.6ms)[0m  [1mSELECT SUM(total_amount) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 2[0m
+Mysql2::Error: Unknown column 'total_amount' in 'field list': SELECT SUM(total_amount) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 2
+  [1m[35m (1.5ms)[0m  SELECT SUM(total_amount) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 2
+Mysql2::Error: Unknown column 'total_amount' in 'field list': SELECT SUM(total_amount) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 2
+  [1m[36m (0.8ms)[0m  [1mSELECT SUM(`user_work_details`.`total_time`) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 2[0m
+  [1m[35m (0.3ms)[0m  SELECT SUM(`user_work_details`.`total_time`) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 2
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-06-28 18:00:11 +0530
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees`[0m
+  [1m[35mUserDetail Load (0.1ms)[0m  SELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 1 LIMIT 1
+  [1m[36mUserType Load (0.1ms)[0m  [1mSELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1[0m
+  [1m[35mUserDetail Load (0.2ms)[0m  SELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUserType Load (0.2ms)[0m  SELECT `user_types`.* FROM `user_types`
+  [1m[36mBloodGroup Load (0.2ms)[0m  [1mSELECT `blood_groups`.* FROM `blood_groups`[0m
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments`
+  [1m[36mDesignation Load (0.2ms)[0m  [1mSELECT `designations`.* FROM `designations`[0m
+  [1m[35mGrade Load (0.3ms)[0m  SELECT `grades`.* FROM `grades`
+  [1m[36mReligion Load (0.2ms)[0m  [1mSELECT `religions`.* FROM `religions`[0m
+  Rendered employees/_form.html.erb (670.4ms)
+  Rendered employees/_new.html.erb (672.0ms)
+  Rendered employees/index.html.erb within layouts/application (677.0ms)
+  Rendered layouts/_head.html.erb (293.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 975ms (Views: 972.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 18:00:15 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.3ms)[0m  SELECT `sallary_component_details`.* FROM `sallary_component_details`
+  Rendered sallary_structures/_form.html.erb (42.8ms)
+  Rendered sallary_structures/_new.html.erb (44.5ms)
+  [1m[36mSallaryStructure Load (0.1ms)[0m  [1mSELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1[0m
+  [1m[35mSallaryComponentDetail Load (0.1ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1[0m
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (49.7ms)
+  Rendered layouts/_head.html.erb (277.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 335ms (Views: 331.4ms | ActiveRecord: 1.0ms)
+  [1m[36mSallaryStructure Load (0.2ms)[0m  [1mSELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 2[0m
+  [1m[35mSallaryComponentDetail Load (0.1ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1[0m
+
+
+Started GET "/sallary_structures/1/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"1"}
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.2ms)[0m  SELECT `sallary_component_details`.* FROM `sallary_component_details`
+  Rendered sallary_structures/_form.html.erb (66.4ms)
+  Rendered sallary_structures/_new.html.erb (67.3ms)
+  [1m[36mSallaryStructure Load (0.2ms)[0m  [1mSELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 1[0m
+  [1m[35mSallaryComponentDetail Load (0.2ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT SUM(`user_work_details`.`total_time`) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 1
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (87.0ms)
+  Rendered layouts/_head.html.erb (261.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 386ms (Views: 363.5ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/employees.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/family_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/personnel_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/sallary_component_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/sallary_structures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/user_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/user_profession_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/user_work_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/application.self-1d35e03c661d86eb286e9ee862cb4cb7b90801e92c05c74e67c39c7a7f877654.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/users.self-1826e31b3684600c8fddbd56c33d200a98414e6d280fe87e1676e3b83e41a0b3.css?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:30 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/employees.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/family_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/personnel_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/sallary_component_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/sallary_structures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/user_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/user_profession_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/user_work_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/users.self-8f234f0d32ac87623386f9e069e6a0f0ec155672c2b9a661eae1acc72421511c.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-28 18:13:31 +0530
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-06-28 18:13:36 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zX4UQ1BJqwgy7Xrbantgi0NQa+0lisoi7MruFRC10jiNASjHQIbvN0k+F/Uu+XXEiYXUdofOAmW0TrWT0goUtA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-28 18:13:36 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (12.6ms)
+  Rendered layouts/_head.html.erb (261.6ms)
+Completed 200 OK in 284ms (Views: 276.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-06-28 18:42:37 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBuTvMUvk3l/GBGmg8hFcBIjyJKvY46/vw7IB8kjdj4bFUmkYUVk/f1H9WwQrEIj5mR2BS/GuXdRoaNST4mzUg==", "user"=>{"email"=>"superadmin@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'superadmin@test.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-06-28 11:41:58', `current_sign_in_at` = '2015-06-28 13:12:37', `sign_in_count` = 5, `updated_at` = '2015-06-28 13:12:37' WHERE `users`.`id` = 1[0m
+  [1m[35m (147.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/employees
+Completed 302 Found in 253ms (ActiveRecord: 148.6ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-06-28 18:42:37 +0530
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT `employees`.* FROM `employees`[0m
+  [1m[35mUserDetail Load (0.2ms)[0m  SELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 1 LIMIT 1
+  [1m[36mUserType Load (0.1ms)[0m  [1mSELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1[0m
+  [1m[35mUserDetail Load (0.1ms)[0m  SELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUserType Load (0.3ms)[0m  SELECT `user_types`.* FROM `user_types`
+  [1m[36mBloodGroup Load (0.2ms)[0m  [1mSELECT `blood_groups`.* FROM `blood_groups`[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT `departments`.* FROM `departments`
+  [1m[36mDesignation Load (0.2ms)[0m  [1mSELECT `designations`.* FROM `designations`[0m
+  [1m[35mGrade Load (0.2ms)[0m  SELECT `grades`.* FROM `grades`
+  [1m[36mReligion Load (0.2ms)[0m  [1mSELECT `religions`.* FROM `religions`[0m
+  Rendered employees/_form.html.erb (689.1ms)
+  Rendered employees/_new.html.erb (698.6ms)
+  Rendered employees/index.html.erb within layouts/application (730.3ms)
+  Rendered layouts/_head.html.erb (194.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 931ms (Views: 919.5ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2015-06-28 18:43:00 +0530
+Processing by DepartmentsController#index as HTML
+  Rendered departments/_form.html.erb (57.8ms)
+  Rendered departments/_new.html.erb (58.9ms)
+  [1m[36mDepartment Load (0.3ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  Rendered departments/index.html.erb within layouts/application (61.8ms)
+  Rendered layouts/_head.html.erb (236.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 303ms (Views: 301.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2015-06-28 18:43:10 +0530
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5ZFsGCqh/UgaxM0fnF3bXJdWlFAiHaZgkWT1YBtcYy9kWpvMA5JpZrB7uSvKE9TQvlmMn1nGgJGCL4HrYlM1Mg==", "department"=>{"name"=>"ABC", "is_active"=>"1"}, "commit"=>"Create Department"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `departments` (`name`, `created_at`, `updated_at`) VALUES ('ABC', '2015-06-28 13:13:10', '2015-06-28 13:13:10')
+  [1m[36m (94.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 98ms (ActiveRecord: 95.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2015-06-28 18:43:10 +0530
+Processing by DepartmentsController#index as HTML
+  Rendered departments/_form.html.erb (37.0ms)
+  Rendered departments/_new.html.erb (38.2ms)
+  [1m[35mDepartment Load (0.4ms)[0m  SELECT `departments`.* FROM `departments`
+  Rendered departments/index.html.erb within layouts/application (41.4ms)
+  Rendered layouts/_head.html.erb (241.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 287ms (Views: 286.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/designations" for 127.0.0.1 at 2015-06-28 18:43:16 +0530
+Processing by DesignationsController#index as HTML
+  Rendered designations/_form.html.erb (44.5ms)
+  Rendered designations/_new.html.erb (45.7ms)
+  [1m[35mDesignation Load (0.2ms)[0m  SELECT `designations`.* FROM `designations`
+  Rendered designations/index.html.erb within layouts/application (48.6ms)
+  Rendered layouts/_head.html.erb (261.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 315ms (Views: 314.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grades" for 127.0.0.1 at 2015-06-28 18:43:21 +0530
+Processing by GradesController#index as HTML
+  Rendered grades/_form.html.erb (22.2ms)
+  Rendered grades/_new.html.erb (23.2ms)
+  [1m[35mGrade Load (0.3ms)[0m  SELECT `grades`.* FROM `grades`
+  Rendered grades/index.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_head.html.erb (239.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 271ms (Views: 269.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user_types" for 127.0.0.1 at 2015-06-28 18:43:24 +0530
+Processing by UserTypesController#index as HTML
+  Rendered user_types/_form.html.erb (28.2ms)
+  Rendered user_types/_new.html.erb (30.2ms)
+  [1m[35mUserType Load (0.1ms)[0m  SELECT `user_types`.* FROM `user_types`
+  Rendered user_types/index.html.erb within layouts/application (34.5ms)
+  Rendered layouts/_head.html.erb (258.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 301ms (Views: 299.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blood_groups" for 127.0.0.1 at 2015-06-28 18:43:29 +0530
+Processing by BloodGroupsController#index as HTML
+  Rendered blood_groups/_form.html.erb (45.0ms)
+  Rendered blood_groups/_new.html.erb (46.4ms)
+  [1m[35mBloodGroup Load (0.2ms)[0m  SELECT `blood_groups`.* FROM `blood_groups`
+  Rendered blood_groups/index.html.erb within layouts/application (53.0ms)
+  Rendered layouts/_head.html.erb (263.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 323ms (Views: 321.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/holidays" for 127.0.0.1 at 2015-06-28 18:43:31 +0530
+Processing by HolidaysController#index as HTML
+  Rendered holidays/_form.html.erb (66.3ms)
+  Rendered holidays/_new.html.erb (67.5ms)
+  [1m[35mHoliday Load (0.5ms)[0m  SELECT `holidays`.* FROM `holidays`
+  Rendered holidays/index.html.erb within layouts/application (75.1ms)
+  Rendered layouts/_head.html.erb (249.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 331ms (Views: 326.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-06-28 18:44:03 +0530
+Processing by EmployeesController#index as HTML
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees`
+  [1m[36mUserDetail Load (0.2ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 1 LIMIT 1[0m
+  [1m[35mUserType Load (0.2ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1
+  [1m[36mUserDetail Load (0.4ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mUserType Load (0.2ms)[0m  [1mSELECT `user_types`.* FROM `user_types`[0m
+  [1m[35mBloodGroup Load (0.2ms)[0m  SELECT `blood_groups`.* FROM `blood_groups`
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  [1m[35mDesignation Load (0.2ms)[0m  SELECT `designations`.* FROM `designations`
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  [1m[35mReligion Load (0.2ms)[0m  SELECT `religions`.* FROM `religions`
+  Rendered employees/_form.html.erb (572.1ms)
+  Rendered employees/_new.html.erb (576.5ms)
+  Rendered employees/index.html.erb within layouts/application (590.3ms)
+  Rendered layouts/_head.html.erb (286.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 882ms (Views: 875.4ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/employees" for 127.0.0.1 at 2015-06-28 18:45:22 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5dHAN/0muis9PHk5w0hentXfUtQMoUZ0fgt9smzXHkFkGjfj1BUuBZeDDQ2VBlES/NBKG3d6YIVtQAk5FdhIXA==", "employee"=>{"user_name"=>"ABC", "email"=>"ABC@gmail.com", "emp_id"=>"rwef", "user_detail_attributes"=>{"user_type_id"=>"2", "first_name"=>"SAM", "last_name"=>"SUN", "gender"=>"male", "official_phone"=>"9894873892", "official_mobile"=>"", "blood_group_id"=>"6", "fax"=>"", "pan_no"=>"", "department_id"=>"", "designation_id"=>"1", "grade_id"=>"1", "religion_id"=>""}}, "commit"=>"Create Employee"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mEmployee Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `employees` WHERE `employees`.`user_name` = BINARY 'ABC' LIMIT 1[0m
+  [1m[35mEmployee Exists (0.2ms)[0m  SELECT  1 AS one FROM `employees` WHERE `employees`.`email` = BINARY 'ABC@gmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `employees` (`emp_id`, `email`, `user_name`, `created_at`, `updated_at`) VALUES ('rwef', 'ABC@gmail.com', 'ABC', '2015-06-28 13:15:22', '2015-06-28 13:15:22')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `user_details` (`first_name`, `last_name`, `gender`, `official_phone`, `official_mobile`, `fax`, `pan_no`, `blood_group_id`, `designation_id`, `grade_id`, `user_type_id`, `employee_id`, `created_at`, `updated_at`) VALUES ('SAM', 'SUN', 'male', '9894873892', '', '', '', 6, 1, 1, 2, 3, '2015-06-28 13:15:22', '2015-06-28 13:15:22')
+  [1m[36m (97.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'abc@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`email`, `user_name`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('abc@gmail.com', 'ABC', '$2a$10$z7xLAaBQDpr/4K1A4XJ4BORLxEU.g64x4ARl1wiO0VQ9qdeRM/Wve', '2015-06-28 13:15:22', '2015-06-28 13:15:22')
+  [1m[36m (47.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mEmployee Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM `employees` WHERE (`employees`.`user_name` = BINARY 'ABC' AND `employees`.`id` != 3) LIMIT 1[0m
+  [1m[35mEmployee Exists (0.4ms)[0m  SELECT  1 AS one FROM `employees` WHERE (`employees`.`email` = BINARY 'ABC@gmail.com' AND `employees`.`id` != 3) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `employees` SET `user_id` = 4, `updated_at` = '2015-06-28 13:15:22' WHERE `employees`.`id` = 3[0m
+  [1m[35m (39.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `user_work_details` (`login`, `logout`, `employee_id`, `login_time`, `logout_time`, `total_time`, `created_at`, `updated_at`) VALUES ('2015-06-28', '2015-06-28', 3, '2015-06-28 11:52:02', '2015-06-28 13:15:22', 83.33333357226667, '2015-06-28 13:15:22', '2015-06-28 13:15:22')
+  [1m[36m (46.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `user_work_details` (`login`, `logout`, `employee_id`, `login_time`, `logout_time`, `total_time`, `created_at`, `updated_at`) VALUES ('2015-06-28', '2015-06-28', 3, '2015-06-28 13:48:42', '2015-06-28 15:28:42', 100.00000020413333, '2015-06-28 13:15:22', '2015-06-28 13:15:22')[0m
+  [1m[35m (39.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/employees
+Completed 302 Found in 422ms (ActiveRecord: 278.8ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-06-28 18:45:22 +0530
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1mSELECT `employees`.* FROM `employees`[0m
+  [1m[35mUserDetail Load (0.5ms)[0m  SELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 1 LIMIT 1
+  [1m[36mUserType Load (0.1ms)[0m  [1mSELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1[0m
+  [1m[35mUserDetail Load (0.4ms)[0m  SELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUserDetail Load (0.4ms)[0m  SELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 3 LIMIT 1
+  [1m[36mUserType Load (0.3ms)[0m  [1mSELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 2 LIMIT 1[0m
+  [1m[35mUserType Load (0.2ms)[0m  SELECT `user_types`.* FROM `user_types`
+  [1m[36mBloodGroup Load (0.2ms)[0m  [1mSELECT `blood_groups`.* FROM `blood_groups`[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT `departments`.* FROM `departments`
+  [1m[36mDesignation Load (0.2ms)[0m  [1mSELECT `designations`.* FROM `designations`[0m
+  [1m[35mGrade Load (0.1ms)[0m  SELECT `grades`.* FROM `grades`
+  [1m[36mReligion Load (0.2ms)[0m  [1mSELECT `religions`.* FROM `religions`[0m
+  Rendered employees/_form.html.erb (708.5ms)
+  Rendered employees/_new.html.erb (711.0ms)
+  Rendered employees/index.html.erb within layouts/application (722.2ms)
+  Rendered layouts/_head.html.erb (198.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 927ms (Views: 921.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/employees/3/attendance" for 127.0.0.1 at 2015-06-28 18:45:28 +0530
+Processing by EmployeesController#attendance as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.7ms)[0m  [1mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1[0m
+  [1m[35mUserWorkDetail Load (0.6ms)[0m  SELECT `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 3
+  Rendered employees/attendance.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_head.html.erb (270.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 282ms (Views: 278.4ms | ActiveRecord: 1.6ms)
+  [1m[36mEmployee Load (0.5ms)[0m  [1mSELECT  `employees`.* FROM `employees`  ORDER BY `employees`.`id` DESC LIMIT 1[0m
+  [1m[36mUserWorkDetail Load (0.4ms)[0m  [1mSELECT  `user_work_details`.* FROM `user_work_details`  ORDER BY `user_work_details`.`id` DESC LIMIT 2[0m
+  [1m[35mUserWorkDetail Load (0.6ms)[0m  SELECT  `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`id` = 8 LIMIT 1
+  [1m[36mUserWorkDetail Load (0.3ms)[0m  [1mSELECT  `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `user_work_details` SET `total_time` = 360.0, `updated_at` = '2015-06-28 13:30:54' WHERE `user_work_details`.`id` = 8[0m
+  [1m[35m (377.8ms)[0m  COMMIT
+
+
+Started GET "/employees/3/attendance" for 127.0.0.1 at 2015-06-28 19:00:58 +0530
+Processing by EmployeesController#attendance as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1
+  [1m[36mUserWorkDetail Load (0.6ms)[0m  [1mSELECT `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 3[0m
+  Rendered employees/attendance.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_head.html.erb (203.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 216ms (Views: 213.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/family_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/employees.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/personnel_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/sallary_component_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/sallary_structures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/user_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/user_profession_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/user_work_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/users.self-1826e31b3684600c8fddbd56c33d200a98414e6d280fe87e1676e3b83e41a0b3.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/application.self-1d35e03c661d86eb286e9ee862cb4cb7b90801e92c05c74e67c39c7a7f877654.css?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/employees.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/family_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/personnel_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/sallary_component_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/sallary_structures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/user_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/user_profession_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/user_work_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/users.self-8f234f0d32ac87623386f9e069e6a0f0ec155672c2b9a661eae1acc72421511c.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-28 19:00:59 +0530
+  [1m[36mUserWorkDetail Load (0.6ms)[0m  [1mSELECT  `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`id` = 8 LIMIT 1[0m
+  [1m[35mUserWorkDetail Load (0.3ms)[0m  SELECT  `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`id` = 8 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `user_work_details` SET `login_time` = '2015-06-25 13:00:00', `updated_at` = '2015-06-28 13:32:29' WHERE `user_work_details`.`id` = 8
+  [1m[36m (64.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/employees/3/attendance" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+Processing by EmployeesController#attendance as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1[0m
+  [1m[35mUserWorkDetail Load (0.5ms)[0m  SELECT `user_work_details`.* FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 3
+  Rendered employees/attendance.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_head.html.erb (220.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 230ms (Views: 227.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/departments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/blood_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/designations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/employees.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/family_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/holidays.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/languages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/personnel_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/religions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/sallary_component_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/sallary_structures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/user_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/user_profession_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/user_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/user_work_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/users.self-1826e31b3684600c8fddbd56c33d200a98414e6d280fe87e1676e3b83e41a0b3.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/application.self-1d35e03c661d86eb286e9ee862cb4cb7b90801e92c05c74e67c39c7a7f877654.css?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/blood_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/departments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/designations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/employees.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/family_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/holidays.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/languages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/personnel_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/religions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/sallary_component_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/sallary_structures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/user_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/user_profession_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/user_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:33 +0530
+
+
+Started GET "/assets/user_work_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:34 +0530
+
+
+Started GET "/assets/users.self-8f234f0d32ac87623386f9e069e6a0f0ec155672c2b9a661eae1acc72421511c.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:34 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-28 19:02:34 +0530
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-06-28 19:03:34 +0530
+Processing by EmployeesController#index as HTML
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees`
+  [1m[36mUserDetail Load (0.1ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 1 LIMIT 1[0m
+  [1m[35mUserType Load (0.1ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1
+  [1m[36mUserDetail Load (0.1ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mUserDetail Load (0.1ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 3 LIMIT 1[0m
+  [1m[35mUserType Load (0.1ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 2 LIMIT 1
+  [1m[36mUserType Load (0.2ms)[0m  [1mSELECT `user_types`.* FROM `user_types`[0m
+  [1m[35mBloodGroup Load (0.1ms)[0m  SELECT `blood_groups`.* FROM `blood_groups`
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  [1m[35mDesignation Load (0.2ms)[0m  SELECT `designations`.* FROM `designations`
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  [1m[35mReligion Load (0.2ms)[0m  SELECT `religions`.* FROM `religions`
+  Rendered employees/_form.html.erb (673.1ms)
+  Rendered employees/_new.html.erb (674.7ms)
+  Rendered employees/index.html.erb within layouts/application (680.6ms)
+  Rendered layouts/_head.html.erb (203.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 890ms (Views: 887.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/sallary_structures/3/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 19:03:39 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"3"}
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (32.4ms)
+  Rendered sallary_structures/_new.html.erb (33.8ms)
+  [1m[35mSallaryStructure Load (0.3ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 3
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (36.2ms)
+  Rendered layouts/_head.html.erb (265.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 308ms (Views: 306.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/sallary_structures" for 127.0.0.1 at 2015-06-28 19:03:49 +0530
+Processing by SallaryStructuresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CaEA3EJcWMjCgDUw7lc32vJIX4iAPOJjKcGHpkYlKDuIavcIa2/M5mg/QQS4GThW20dHR/vnxJI6ivMtPyp+Jg==", "sallary_structure"=>{"sallary_component_detail_id"=>"1", "amount"=>"10000", "employee_id"=>"3"}, "commit"=>"Create Sallary structure"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `sallary_structures` (`amount`, `sallary_component_detail_id`, `employee_id`, `created_at`, `updated_at`) VALUES (10000.0, 1, 3, '2015-06-28 13:33:49', '2015-06-28 13:33:49')[0m
+  [1m[35m (112.3ms)[0m  COMMIT
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/sallary_structures/3/employee_sallary_structure
+Completed 302 Found in 119ms (ActiveRecord: 112.9ms)
+
+
+Started GET "/sallary_structures/3/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 19:03:49 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"3"}
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (29.6ms)
+  Rendered sallary_structures/_new.html.erb (30.2ms)
+  [1m[35mSallaryStructure Load (0.6ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 3
+  [1m[36mSallaryComponentDetail Load (0.1ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT SUM(`user_work_details`.`total_time`) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 3
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (34.9ms)
+  Rendered layouts/_head.html.erb (230.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 271ms (Views: 267.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/sallary_structures" for 127.0.0.1 at 2015-06-28 19:04:03 +0530
+Processing by SallaryStructuresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pwqGgsug+k09puDUPowjB2MLQgaI0A7RNc9b3tq4SucmwXFW4pNuY5cZlOBowiyLSgRayfMLKCAmhC9Vo7cc+g==", "sallary_structure"=>{"sallary_component_detail_id"=>"2", "amount"=>"1000", "employee_id"=>"3"}, "commit"=>"Create Sallary structure"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `sallary_structures` (`amount`, `sallary_component_detail_id`, `employee_id`, `created_at`, `updated_at`) VALUES (1000.0, 2, 3, '2015-06-28 13:34:03', '2015-06-28 13:34:03')[0m
+  [1m[35m (79.5ms)[0m  COMMIT
+  [1m[36mEmployee Load (0.3ms)[0m  [1mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/sallary_structures/3/employee_sallary_structure
+Completed 302 Found in 85ms (ActiveRecord: 80.2ms)
+
+
+Started GET "/sallary_structures/3/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 19:04:03 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"3"}
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (1.1ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (109.5ms)
+  Rendered sallary_structures/_new.html.erb (110.7ms)
+  [1m[35mSallaryStructure Load (0.6ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 3
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.1ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM(`user_work_details`.`total_time`) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 3[0m
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (115.7ms)
+  Rendered layouts/_head.html.erb (218.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 340ms (Views: 335.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/sallary_component_details" for 127.0.0.1 at 2015-06-28 19:04:18 +0530
+Processing by SallaryComponentDetailsController#index as HTML
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_component_details/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_head.html.erb (208.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 217ms (Views: 216.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sallary_component_details/new" for 127.0.0.1 at 2015-06-28 19:04:36 +0530
+Processing by SallaryComponentDetailsController#new as HTML
+  Rendered sallary_component_details/_form.html.erb (177.2ms)
+  Rendered sallary_component_details/new.html.erb within layouts/application (178.3ms)
+  Rendered layouts/_head.html.erb (260.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 443ms (Views: 442.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sallary_component_details" for 127.0.0.1 at 2015-06-28 19:05:09 +0530
+Processing by SallaryComponentDetailsController#index as HTML
+  [1m[35mSallaryComponentDetail Load (0.2ms)[0m  SELECT `sallary_component_details`.* FROM `sallary_component_details`
+  Rendered sallary_component_details/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_head.html.erb (258.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 266ms (Views: 265.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-06-28 19:05:11 +0530
+Processing by EmployeesController#index as HTML
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees`
+  [1m[36mUserDetail Load (0.1ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 1 LIMIT 1[0m
+  [1m[35mUserType Load (0.1ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1
+  [1m[36mUserDetail Load (0.1ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mUserDetail Load (0.1ms)[0m  [1mSELECT  `user_details`.* FROM `user_details` WHERE `user_details`.`employee_id` = 3 LIMIT 1[0m
+  [1m[35mUserType Load (0.1ms)[0m  SELECT  `user_types`.* FROM `user_types` WHERE `user_types`.`id` = 2 LIMIT 1
+  [1m[36mUserType Load (0.1ms)[0m  [1mSELECT `user_types`.* FROM `user_types`[0m
+  [1m[35mBloodGroup Load (0.2ms)[0m  SELECT `blood_groups`.* FROM `blood_groups`
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments`[0m
+  [1m[35mDesignation Load (0.3ms)[0m  SELECT `designations`.* FROM `designations`
+  [1m[36mGrade Load (0.3ms)[0m  [1mSELECT `grades`.* FROM `grades`[0m
+  [1m[35mReligion Load (0.2ms)[0m  SELECT `religions`.* FROM `religions`
+  Rendered employees/_form.html.erb (703.5ms)
+  Rendered employees/_new.html.erb (705.3ms)
+  Rendered employees/index.html.erb within layouts/application (710.6ms)
+  Rendered layouts/_head.html.erb (243.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 959ms (Views: 956.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sallary_structures/3/employee_sallary_structure" for 127.0.0.1 at 2015-06-28 19:05:14 +0530
+Processing by SallaryStructuresController#employee_sallary_structure as HTML
+  Parameters: {"employee_id"=>"3"}
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 3 LIMIT 1
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT `sallary_component_details`.* FROM `sallary_component_details`[0m
+  Rendered sallary_structures/_form.html.erb (33.9ms)
+  Rendered sallary_structures/_new.html.erb (34.7ms)
+  [1m[35mSallaryStructure Load (0.2ms)[0m  SELECT `sallary_structures`.* FROM `sallary_structures` WHERE `sallary_structures`.`employee_id` = 3
+  [1m[36mSallaryComponentDetail Load (0.2ms)[0m  [1mSELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 1 LIMIT 1[0m
+  [1m[35mSallaryComponentDetail Load (0.2ms)[0m  SELECT  `sallary_component_details`.* FROM `sallary_component_details` WHERE `sallary_component_details`.`id` = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM(`user_work_details`.`total_time`) FROM `user_work_details` WHERE `user_work_details`.`employee_id` = 3[0m
+  Rendered sallary_structures/employee_sallary_structure.html.erb within layouts/application (39.1ms)
+  Rendered layouts/_head.html.erb (212.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 257ms (Views: 254.0ms | ActiveRecord: 1.3ms)

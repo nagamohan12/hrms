@@ -12,6 +12,12 @@ class SallaryStructuresController < ApplicationController
   def employee_sallary_structure
     @employee = Employee.find(params[:employee_id])
     @sallary_structures = @employee.sallary_structures
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "sallary"   # Excluding ".pdf" extension.
+      end
+    end
   end
 
   # GET /sallary_structures/1

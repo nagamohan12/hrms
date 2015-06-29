@@ -47,5 +47,7 @@ class Employee < ActiveRecord::Base
   end
 
   def net_pay
+    return 0 if self.month_gross <= 0
+    self.month_gross/(30*24*60) * self.user_work_details.sum('total_time')
   end
 end
