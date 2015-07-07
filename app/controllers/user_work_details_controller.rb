@@ -25,7 +25,9 @@ class UserWorkDetailsController < ApplicationController
   # POST /user_work_details.json
   def create
     @user_work_detail = UserWorkDetail.new(user_work_detail_params)
-
+    if user_work_detail_params[:login] == user_work_detail_params[:logout]
+      @user_work_detail.total_time = user_work_detail_params[:logout_time] - user_work_detail_params[:login_time]
+    end
     respond_to do |format|
       if @user_work_detail.save
         format.html { redirect_to @user_work_detail, notice: 'User work detail was successfully created.' }
@@ -69,6 +71,6 @@ class UserWorkDetailsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_work_detail_params
-      params.require(:user_work_detail).permit(:login, :logout, :total_time, :user_id)
+      params.require(:user_work_detail).permit(:login, :logout, :total_time, :user_id, :employee_id, :login_time, :logout_time)
     end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150626093005) do
+ActiveRecord::Schema.define(version: 20150628100152) do
 
   create_table "addresses", force: :cascade do |t|
     t.text     "permanent",   limit: 65535
@@ -145,14 +145,38 @@ ActiveRecord::Schema.define(version: 20150626093005) do
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
   add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
 
+  create_table "sallary_component_details", force: :cascade do |t|
+    t.string   "name",           limit: 255
+    t.string   "print_name",     limit: 255
+    t.string   "component_type", limit: 255
+    t.string   "amt_per",        limit: 255
+    t.string   "status",         limit: 255
+    t.integer  "amt_per_value",  limit: 4
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.integer  "position",       limit: 4
+  end
+
+  create_table "sallary_structures", force: :cascade do |t|
+    t.string   "name",                        limit: 255
+    t.float    "amount",                      limit: 24
+    t.integer  "sallary_component_detail_id", limit: 4
+    t.integer  "employee_id",                 limit: 4
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
+  end
+
+  add_index "sallary_structures", ["employee_id"], name: "index_sallary_structures_on_employee_id", using: :btree
+  add_index "sallary_structures", ["sallary_component_detail_id"], name: "index_sallary_structures_on_sallary_component_detail_id", using: :btree
+
   create_table "user_details", force: :cascade do |t|
     t.string   "first_name",      limit: 255
     t.string   "last_name",       limit: 255
     t.string   "gender",          limit: 255
     t.date     "dob"
-    t.integer  "official_phone",  limit: 4
-    t.integer  "official_mobile", limit: 4
-    t.integer  "fax",             limit: 4
+    t.string   "official_phone",  limit: 255
+    t.string   "official_mobile", limit: 255
+    t.string   "fax",             limit: 255
     t.string   "official_email",  limit: 255
     t.string   "pan_no",          limit: 255
     t.integer  "blood_group_id",  limit: 4
@@ -204,6 +228,8 @@ ActiveRecord::Schema.define(version: 20150626093005) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
     t.integer  "employee_id", limit: 4
+    t.datetime "login_time"
+    t.datetime "logout_time"
   end
 
   add_index "user_work_details", ["employee_id"], name: "index_user_work_details_on_employee_id", using: :btree
@@ -243,6 +269,8 @@ ActiveRecord::Schema.define(version: 20150626093005) do
   add_foreign_key "family_details", "users"
   add_foreign_key "personnel_details", "employees"
   add_foreign_key "personnel_details", "users"
+  add_foreign_key "sallary_structures", "employees"
+  add_foreign_key "sallary_structures", "sallary_component_details"
   add_foreign_key "user_details", "blood_groups"
   add_foreign_key "user_details", "departments"
   add_foreign_key "user_details", "designations"

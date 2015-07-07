@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sallary_component_detail.name %>
+</p>
+
+<p>
+  <strong>Print name:</strong>
+  <%= @sallary_component_detail.print_name %>
+</p>
+
+<p>
+  <strong>Component type:</strong>
+  <%= @sallary_component_detail.component_type %>
+</p>
+
+<p>
+  <strong>Amt per:</strong>
+  <%= @sallary_component_detail.amt_per %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @sallary_component_detail.status %>
+</p>
+
+<p>
+  <strong>Amt per value:</strong>
+  <%= @sallary_component_detail.amt_per_value %>
+</p>
+
+<%= link_to 'Edit', edit_sallary_component_detail_path(@sallary_component_detail) %> |
+<%= link_to 'Back', sallary_component_details_path %>
